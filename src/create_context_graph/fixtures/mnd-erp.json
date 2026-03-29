@@ -1353,6 +1353,41 @@
       "target_label": "Urun",
       "source_name": "CROWN GENERAL N.V.",
       "target_name": "KARTON KUTU (NO:13) C+B-TST E:360 X B:650 X Y:390 - MND BASKILI"
+    },
+    {
+      "type": "ISTASYONDA",
+      "source_label": "Makine",
+      "target_label": "Istasyon",
+      "source_name": "IZOLASYON AYIKLAMA-1",
+      "target_name": "Ayiklama"
+    },
+    {
+      "type": "ISTASYONDA",
+      "source_label": "Makine",
+      "target_label": "Istasyon",
+      "source_name": "PP LEVHA EKSTRÜZYON",
+      "target_name": "PP Ekstruzyon"
+    },
+    {
+      "type": "ISTASYONDA",
+      "source_label": "Makine",
+      "target_label": "Istasyon",
+      "source_name": "LAMINASYON (TUTKALLI-1)",
+      "target_name": "Arka Duvar Laminasyon"
+    },
+    {
+      "type": "ISTASYONDA",
+      "source_label": "Makine",
+      "target_label": "Istasyon",
+      "source_name": "KISSCUT AMBALAJLAMA",
+      "target_name": "Ambalaj Yapma"
+    },
+    {
+      "type": "ISTASYONDA",
+      "source_label": "Makine",
+      "target_label": "Istasyon",
+      "source_name": "ARKA DUVAR LAMINASYON-1 (44)",
+      "target_name": "Arka Duvar Laminasyon"
     }
   ],
   "documents": [

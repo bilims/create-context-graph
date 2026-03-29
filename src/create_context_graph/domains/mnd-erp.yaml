@@ -592,17 +592,15 @@ agent_tools:
     description: "Bakım ticketlarını makine bazında analiz eder. Fire korelasyonu da gösterilir."
     parameters: []
     cypher: |
-      MATCH (bt:BakimTicketi)-[:MAKINEYI_KAPSAR]->(m:Makine)
-      WHERE bt.domain = $domain
+      MATCH (bt:BakimTicketi {domain: $domain})-[:MAKINEYI_KAPSAR]->(m:Makine)
       WITH m, count(bt) AS ticket_sayisi
-      OPTIONAL MATCH (f:Fire)-[:MAKINEDE]->(m)
-      WHERE f.domain = $domain
+      OPTIONAL MATCH (f:Fire {domain: $domain})-[:MAKINEDE]->(m)
       RETURN m.aciklama AS makine_aciklama,
              m.makine_kodu AS makine_kodu,
              m.istasyon_kodu AS istasyon_kodu,
              ticket_sayisi,
              count(f) AS fire_kayit_sayisi,
-             sum(f.firemiktari) AS toplam_fire
+             COALESCE(sum(f.firemiktari), 0) AS toplam_fire
       ORDER BY ticket_sayisi DESC
       LIMIT 20
 
@@ -630,14 +628,11 @@ agent_tools:
     description: "İstasyon bazında canlı iş emri yükü, makine sayısı ve fire'ı analiz eder. Darboğaz tespiti için kullanılır."
     parameters: []
     cypher: |
-      MATCH (m:Makine)-[:ISTASYONDA]->(ist:Istasyon)
-      WHERE m.domain = $domain
+      MATCH (m:Makine {domain: $domain})-[:ISTASYONDA]->(ist:Istasyon)
       WITH ist, count(m) AS makine_sayisi
-      OPTIONAL MATCH (ie:IsEmri)-[:KULLANDIGI_RECETE]->(r:Recete)-[:MAKINEDE_ISLEM]->(m2:Makine)-[:ISTASYONDA]->(ist)
-      WHERE ie.domain = $domain AND ie.ust_is_emri = true AND ie.kapali = false
+      OPTIONAL MATCH (ie:IsEmri {domain: $domain, ust_is_emri: true, kapali: false})-[:KULLANDIGI_RECETE]->(r:Recete)-[:MAKINEDE_ISLEM]->(m2:Makine)-[:ISTASYONDA]->(ist)
       WITH ist, makine_sayisi, count(DISTINCT ie) AS aktif_is_emri
-      OPTIONAL MATCH (f:Fire)-[:MAKINEDE]->(m3:Makine)-[:ISTASYONDA]->(ist)
-      WHERE f.domain = $domain
+      OPTIONAL MATCH (f:Fire {domain: $domain})-[:MAKINEDE]->(m3:Makine)-[:ISTASYONDA]->(ist)
       RETURN ist.istisim AS istasyon_adi,
              ist.istkodu AS istasyon_kodu,
              makine_sayisi,
