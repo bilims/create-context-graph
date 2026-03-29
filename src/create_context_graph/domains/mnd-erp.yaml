@@ -627,24 +627,24 @@ agent_tools:
       LIMIT 25
 
   - name: istasyon_kapasite_analizi
-    description: "İstasyon bazında operasyon yükü, makine sayısı ve fire'ı birlikte analiz eder. Darboğaz tespiti için kullanılır."
+    description: "İstasyon bazında canlı iş emri yükü, makine sayısı ve fire'ı analiz eder. Darboğaz tespiti için kullanılır."
     parameters: []
     cypher: |
       MATCH (m:Makine)-[:ISTASYONDA]->(ist:Istasyon)
       WHERE m.domain = $domain
       WITH ist, count(m) AS makine_sayisi
-      OPTIONAL MATCH (op:Operasyon)-[:ISTASYONDA]->(ist)
-      WHERE op.domain = $domain
-      WITH ist, makine_sayisi, count(DISTINCT op) AS operasyon_sayisi
-      OPTIONAL MATCH (f:Fire)-[:MAKINEDE]->(m2:Makine)-[:ISTASYONDA]->(ist)
+      OPTIONAL MATCH (ie:IsEmri)-[:KULLANDIGI_RECETE]->(r:Recete)-[:MAKINEDE_ISLEM]->(m2:Makine)-[:ISTASYONDA]->(ist)
+      WHERE ie.domain = $domain AND ie.ust_is_emri = true AND ie.kapali = false
+      WITH ist, makine_sayisi, count(DISTINCT ie) AS aktif_is_emri
+      OPTIONAL MATCH (f:Fire)-[:MAKINEDE]->(m3:Makine)-[:ISTASYONDA]->(ist)
       WHERE f.domain = $domain
       RETURN ist.istisim AS istasyon_adi,
              ist.istkodu AS istasyon_kodu,
              makine_sayisi,
-             operasyon_sayisi,
+             aktif_is_emri,
              CASE WHEN makine_sayisi > 0
-               THEN toFloat(operasyon_sayisi) / makine_sayisi
-               ELSE 0.0 END AS operasyon_makine_orani,
+               THEN toFloat(aktif_is_emri) / makine_sayisi
+               ELSE 0.0 END AS makine_basi_yuk,
              count(DISTINCT f) AS fire_kayit_sayisi,
              COALESCE(sum(f.firemiktari), 0) AS toplam_fire
       ORDER BY operasyon_sayisi DESC

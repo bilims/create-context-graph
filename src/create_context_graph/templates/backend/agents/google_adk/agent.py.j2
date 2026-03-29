@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import asyncio
 import json
+import os
 import threading
 import uuid
 
@@ -71,6 +72,7 @@ def {{ tool.name }}({% for param in tool.parameters %}{{ param.name }}: {{ 'str'
     """{{ tool.description }}"""
     cypher = """{{ tool.cypher | indent(4) }}"""
     params = {
+        "domain": settings.domain_id,
 {% for param in tool.parameters %}
         "{{ param.name }}": {{ param.name }},
 {% endfor %}
@@ -103,7 +105,7 @@ def get_graph_schema() -> str:
 
 agent = Agent(
     name="{{ domain.id | replace('-', '_') }}_agent",
-    model="gemini-2.0-flash",
+    model=os.environ.get("GEMINI_MODEL", "gemini-3.1-pro-preview"),
     instruction=SYSTEM_PROMPT,
     tools=[
 {% for tool in agent_tools %}
