@@ -1021,51 +1021,310 @@
     {
       "type": "ETKILER",
       "source_label": "DisOlay",
-      "source_name": "EVT-AB-ROHS-2026",
+      "source_name": "AB RoHS Direktifi Genisletmesi 2026",
       "target_label": "Ulke",
       "target_name": "Italya"
     },
     {
       "type": "ETKILER",
       "source_label": "DisOlay",
-      "source_name": "EVT-AB-ROHS-2026",
+      "source_name": "AB RoHS Direktifi Genisletmesi 2026",
       "target_label": "Ulke",
       "target_name": "Fransa"
     },
     {
       "type": "ETKILER",
       "source_label": "DisOlay",
-      "source_name": "EVT-AB-ROHS-2026",
+      "source_name": "AB RoHS Direktifi Genisletmesi 2026",
       "target_label": "Ulke",
       "target_name": "Almanya"
     },
     {
       "type": "ETKILER",
       "source_label": "DisOlay",
-      "source_name": "EVT-HAMMADDE-KRIZ-2025",
+      "source_name": "Kritik Hammadde Tedarik Krizi",
       "target_label": "Ulke",
       "target_name": "Cin"
     },
     {
       "type": "ETKILER",
       "source_label": "DisOlay",
-      "source_name": "EVT-ENERJI-KRIZI-2025",
+      "source_name": "Avrupa Dogalgaz Fiyat Soku",
       "target_label": "Ulke",
       "target_name": "Italya"
     },
     {
       "type": "ETKILER",
       "source_label": "DisOlay",
-      "source_name": "EVT-ENERJI-KRIZI-2025",
+      "source_name": "Avrupa Dogalgaz Fiyat Soku",
       "target_label": "Ulke",
       "target_name": "Fransa"
     },
     {
       "type": "ETKILER",
       "source_label": "DisOlay",
-      "source_name": "EVT-ENERJI-KRIZI-2025",
+      "source_name": "Avrupa Dogalgaz Fiyat Soku",
       "target_label": "Ulke",
       "target_name": "Almanya"
+    },
+    {
+      "type": "MAKINEYI_KAPSAR",
+      "source_label": "BakimTicketi",
+      "target_label": "Makine",
+      "source_name": "LAMINASYON (TUTKALLI-2- ÇIFT KAFA)",
+      "target_name": "PRES KAGIT ARKA DUVAR-1"
+    },
+    {
+      "type": "MAKINEYI_KAPSAR",
+      "source_label": "BakimTicketi",
+      "target_label": "Makine",
+      "source_name": "GAP CUTTING",
+      "target_name": "IZOLASYON AYIKLAMA-1"
+    },
+    {
+      "type": "MAKINEYI_KAPSAR",
+      "source_label": "BakimTicketi",
+      "target_label": "Makine",
+      "source_name": "SLITTER-1 (CIFT SAFT)",
+      "target_name": "PRES KAGIT ARKA DUVAR-4"
+    },
+    {
+      "type": "ISEMRINDE",
+      "source_label": "Fire",
+      "target_label": "IsEmri",
+      "source_name": "IZOLASYON — Kalınlık Uygunsuzluğu",
+      "target_name": "M00000001266659 — MOUSSE ETANCHEITE G LFF (7REM26354GA1) (T1,5X46,3X105,8)"
+    },
+    {
+      "type": "ISEMRINDE",
+      "source_label": "Fire",
+      "target_label": "IsEmri",
+      "source_name": "IZOLASYON — Ilk Ayar Firesi",
+      "target_name": "M00000001266709 — MOUSSE ETANCHEITE D LFF (7REM26352DA1) (T1,5X46,3X105,8)"
+    },
+    {
+      "type": "ISEMRINDE",
+      "source_label": "Fire",
+      "target_label": "IsEmri",
+      "source_name": "IZOLASYON — Malzeme Hatasi",
+      "target_name": "M00000001266905 — SPONGE (T20X20X150)"
+    },
+    {
+      "type": "URUNUR",
+      "source_label": "IsEmri",
+      "target_label": "Urun",
+      "source_name": "M00000001266659 — MOUSSE ETANCHEITE G LFF (7REM26354GA1) (T1,5X46,3X105,8)",
+      "target_name": "TAHTA PALET 750X1.520"
+    },
+    {
+      "type": "URUNUR",
+      "source_label": "IsEmri",
+      "target_label": "Urun",
+      "source_name": "M00000001266709 — MOUSSE ETANCHEITE D LFF (7REM26352DA1) (T1,5X46,3X105,8)",
+      "target_name": "TAHTA PALET 600X1.400"
+    },
+    {
+      "type": "URUNUR",
+      "source_label": "IsEmri",
+      "target_label": "Urun",
+      "source_name": "M00000001266905 — SPONGE (T20X20X150)",
+      "target_name": "KARTON KUTU (NO:13) C+B-TST E:360 X B:650 X Y:390 - MND BASKILI"
+    },
+    {
+      "type": "URUNUR",
+      "source_label": "IsEmri",
+      "target_label": "Urun",
+      "source_name": "M00000001266897 — GASKET BASE/F-DUCT EOLO T5X6,5X755",
+      "target_name": "KARTON KUTU (NO:5) C+B-TST E:505 X B:1.030 X Y:265 - MND BASKILI"
+    },
+    {
+      "type": "URUNUR",
+      "source_label": "IsEmri",
+      "target_label": "Urun",
+      "source_name": "M00000001265539 — INSULATION BACK PANEL TOP T15X464,5X494,2",
+      "target_name": "KARTON KUTU (NO:4) C+B-TST E:330 X B:500 X Y:360 - BASKISIZ"
+    },
+    {
+      "type": "RECETESI_VAR",
+      "source_label": "Urun",
+      "target_label": "Recete",
+      "source_name": "TAHTA PALET 750X1.520",
+      "target_name": "ISOLATION ASSEMBLY-03"
+    },
+    {
+      "type": "RECETESI_VAR",
+      "source_label": "Urun",
+      "target_label": "Recete",
+      "source_name": "TAHTA PALET 600X1.400",
+      "target_name": "ISOLATION ASSEMBLY-11"
+    },
+    {
+      "type": "RECETESI_VAR",
+      "source_label": "Urun",
+      "target_label": "Recete",
+      "source_name": "KARTON KUTU (NO:13) C+B-TST E:360 X B:650 X Y:390 - MND BASKILI",
+      "target_name": "ISOLATION ASSEMBLY-12"
+    },
+    {
+      "type": "RECETESI_VAR",
+      "source_label": "Urun",
+      "target_label": "Recete",
+      "source_name": "KARTON KUTU (NO:5) C+B-TST E:505 X B:1.030 X Y:265 - MND BASKILI",
+      "target_name": "ISOLATION ASSEMBLY-13"
+    },
+    {
+      "type": "RECETESI_VAR",
+      "source_label": "Urun",
+      "target_label": "Recete",
+      "source_name": "KARTON KUTU (NO:4) C+B-TST E:330 X B:500 X Y:360 - BASKISIZ",
+      "target_name": "ISOLATION ASSEMBLY-14"
+    },
+    {
+      "type": "MAKINEDE_ISLEM",
+      "source_label": "Recete",
+      "target_label": "Makine",
+      "source_name": "ISOLATION ASSEMBLY-03",
+      "target_name": "PRES KAGIT ARKA DUVAR-1"
+    },
+    {
+      "type": "MAKINEDE_ISLEM",
+      "source_label": "Recete",
+      "target_label": "Makine",
+      "source_name": "ISOLATION ASSEMBLY-11",
+      "target_name": "IZOLASYON AYIKLAMA-1"
+    },
+    {
+      "type": "MAKINEDE_ISLEM",
+      "source_label": "Recete",
+      "target_label": "Makine",
+      "source_name": "ISOLATION ASSEMBLY-12",
+      "target_name": "PRES KAGIT ARKA DUVAR-4"
+    },
+    {
+      "type": "MAKINEDE_ISLEM",
+      "source_label": "Recete",
+      "target_label": "Makine",
+      "source_name": "ISOLATION ASSEMBLY-13",
+      "target_name": "PP LEVHA EKSTRÜZYON"
+    },
+    {
+      "type": "MAKINEDE_ISLEM",
+      "source_label": "Recete",
+      "target_label": "Makine",
+      "source_name": "ISOLATION ASSEMBLY-14",
+      "target_name": "LAMINASYON (TUTKALLI-1)"
+    },
+    {
+      "type": "SATIN_ALIR",
+      "source_label": "Musteri",
+      "target_label": "Urun",
+      "source_name": "BOSCH TERMOTEKNIK ISITMA VE KLIMA SAN.VE TIC.A.S.",
+      "target_name": "TAHTA PALET 750X1.520"
+    },
+    {
+      "type": "SATIN_ALIR",
+      "source_label": "Musteri",
+      "target_label": "Urun",
+      "source_name": "VESTEL BEYAZ ESYA SAN. TIC. A.S.-EURO",
+      "target_name": "TAHTA PALET 600X1.400"
+    },
+    {
+      "type": "SATIN_ALIR",
+      "source_label": "Musteri",
+      "target_label": "Urun",
+      "source_name": "ARCELIK-LG KLIMA SAN. TIC. A.S.-USD",
+      "target_name": "KARTON KUTU (NO:13) C+B-TST E:360 X B:650 X Y:390 - MND BASKILI"
+    },
+    {
+      "type": "SATIN_ALIR",
+      "source_label": "Musteri",
+      "target_label": "Urun",
+      "source_name": "BEKO ITALY MANUFACTURING S.R.L. (ITA)",
+      "target_name": "KARTON KUTU (NO:5) C+B-TST E:505 X B:1.030 X Y:265 - MND BASKILI"
+    },
+    {
+      "type": "SATIN_ALIR",
+      "source_label": "Musteri",
+      "target_label": "Urun",
+      "source_name": "VESTEL ELEKTRONIK A.S.-USD",
+      "target_name": "KARTON KUTU (NO:4) C+B-TST E:330 X B:500 X Y:360 - BASKISIZ"
+    },
+    {
+      "type": "KULLANDIGI_RECETE",
+      "source_label": "IsEmri",
+      "target_label": "Recete",
+      "source_name": "M00000001266659 — MOUSSE ETANCHEITE G LFF (7REM26354GA1) (T1,5X46,3X105,8)",
+      "target_name": "ISOLATION ASSEMBLY-03"
+    },
+    {
+      "type": "KULLANDIGI_RECETE",
+      "source_label": "IsEmri",
+      "target_label": "Recete",
+      "source_name": "M00000001266709 — MOUSSE ETANCHEITE D LFF (7REM26352DA1) (T1,5X46,3X105,8)",
+      "target_name": "ISOLATION ASSEMBLY-11"
+    },
+    {
+      "type": "KULLANDIGI_RECETE",
+      "source_label": "IsEmri",
+      "target_label": "Recete",
+      "source_name": "M00000001266905 — SPONGE (T20X20X150)",
+      "target_name": "ISOLATION ASSEMBLY-12"
+    },
+    {
+      "type": "KULLANDIGI_RECETE",
+      "source_label": "IsEmri",
+      "target_label": "Recete",
+      "source_name": "M00000001266897 — GASKET BASE/F-DUCT EOLO T5X6,5X755",
+      "target_name": "ISOLATION ASSEMBLY-13"
+    },
+    {
+      "type": "KULLANDIGI_RECETE",
+      "source_label": "IsEmri",
+      "target_label": "Recete",
+      "source_name": "M00000001265539 — INSULATION BACK PANEL TOP T15X464,5X494,2",
+      "target_name": "ISOLATION ASSEMBLY-14"
+    },
+    {
+      "type": "HAMMADDE_KULLANIR",
+      "source_label": "Recete",
+      "target_label": "Urun",
+      "source_name": "ISOLATION ASSEMBLY-03",
+      "target_name": "TAHTA PALET 700X2.700"
+    },
+    {
+      "type": "HAMMADDE_KULLANIR",
+      "source_label": "Recete",
+      "target_label": "Urun",
+      "source_name": "ISOLATION ASSEMBLY-11",
+      "target_name": "TAHTA PALET 890X1.420 (MAX. 890)"
+    },
+    {
+      "type": "HAMMADDE_KULLANIR",
+      "source_label": "Recete",
+      "target_label": "Urun",
+      "source_name": "ISOLATION ASSEMBLY-12",
+      "target_name": "SUNTA KAPAK 18MM 1.200X1.200"
+    },
+    {
+      "type": "TEDARIK_EDER",
+      "source_label": "Tedarikci",
+      "target_label": "Urun",
+      "source_name": "FTC ME TRADING LLC ",
+      "target_name": "TAHTA PALET 750X1.520"
+    },
+    {
+      "type": "TEDARIK_EDER",
+      "source_label": "Tedarikci",
+      "target_label": "Urun",
+      "source_name": "ANDYMARK",
+      "target_name": "TAHTA PALET 600X1.400"
+    },
+    {
+      "type": "TEDARIK_EDER",
+      "source_label": "Tedarikci",
+      "target_label": "Urun",
+      "source_name": "CROWN GENERAL N.V.",
+      "target_name": "KARTON KUTU (NO:13) C+B-TST E:360 X B:650 X Y:390 - MND BASKILI"
     }
   ],
   "documents": [
@@ -1102,17 +1361,17 @@
         {
           "thought": "Makine bazinda toplam fire miktarlarini hesaplamaliyim",
           "action": "makine_fire_analizi aracini cagir",
-          "result": "Her makine icin toplam fire ve standart sapma hesaplandi"
+          "observation": "Her makine icin toplam fire ve standart sapma hesaplandi"
         },
         {
           "thought": "Ortalama ve standart sapmayi hesaplayip 3-sigma sinirini bul",
           "action": "Istatistiksel hesaplama — ortalama + 3*std_dev esigi uygula",
-          "result": "2 makine 3-sigma sinirinin uzerinde fire uretiyor"
+          "observation": "2 makine 3-sigma sinirinin uzerinde fire uretiyor"
         },
         {
           "thought": "Esigi asan makineler icin bakim ticket gecmisini kontrol et",
           "action": "bakimticket_analizi aracini cagir ve korelasyon bak",
-          "result": "Yuksek fire ureten makinelerin bakim gecmisi incelendi"
+          "observation": "Yuksek fire ureten makinelerin bakim gecmisi incelendi"
         }
       ],
       "outcome": "2 makine 3-sigma sinirini asti. Bakim frekansi arttirilmasi ve operator egitimi onerildi."
@@ -1124,17 +1383,17 @@
         {
           "thought": "RoHS hangi ulkeleri etkiliyor? Etkilenen tedarikcilerimizi bulmaliyim.",
           "action": "DisOlay -> Ulke -> Tedarikci impact chain sorgusu",
-          "result": "AB ulkelerindeki tedarikciler belirlendi"
+          "observation": "AB ulkelerindeki tedarikciler belirlendi"
         },
         {
           "thought": "Etkilenen tedarikcilerin tedarik ettigi urunleri kontrol et",
           "action": "TEDARIK_EDER iliskisi ile etkilenen urunleri listele",
-          "result": "Etkilenen urun listesi olusturuldu"
+          "observation": "Etkilenen urun listesi olusturuldu"
         },
         {
           "thought": "AB musterilerinden gelen ciro ne kadar risk altinda?",
           "action": "musteri_ciro_analizi — AB ulkeleri filtresi",
-          "result": "Risk altindaki toplam ciro hesaplandi"
+          "observation": "Risk altindaki toplam ciro hesaplandi"
         }
       ],
       "outcome": "3 tedarikci etkileniyor. Alternatif kaynak gelistirmesi ve stok tampon artisi onerildi."
@@ -1146,17 +1405,17 @@
         {
           "thought": "Aktif is emirlerini hangi istasyonlarda islem gordugunu bul",
           "action": "istasyon_kapasite_analizi aracini cagir",
-          "result": "Istasyon bazinda yuk dagilimi elde edildi"
+          "observation": "Istasyon bazinda yuk dagilimi elde edildi"
         },
         {
           "thought": "Her istasyondaki makine basina dusen ortalama yuku hesapla",
           "action": "Makine sayisi ile is emri yuku oranini karsilastir",
-          "result": "Kapasite kullanim oranlari hesaplandi"
+          "observation": "Kapasite kullanim oranlari hesaplandi"
         },
         {
           "thought": "Recete bazinda hangi urunlerin darbogazda yogunlastigini tespit et",
           "action": "recete_makine_matrisi aracini cagir",
-          "result": "Darbogaz istasyonundaki urunler belirlendi"
+          "observation": "Darbogaz istasyonundaki urunler belirlendi"
         }
       ],
       "outcome": "En yogun istasyon %92 kapasite kullanımında. Ek vardiya veya makine yatirimi onerildi."

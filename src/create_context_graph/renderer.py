@@ -287,6 +287,11 @@ class ProjectRenderer:
         }
         for template_name, output_name in templates.items():
             self._render_template(template_name, frontend_dir / output_name, ctx)
+        # Next.js requires a public/ directory for Docker standalone builds.
+        # .gitkeep ensures the dir survives git round-trips (empty dirs not tracked).
+        public_dir = frontend_dir / "public"
+        public_dir.mkdir(parents=True, exist_ok=True)
+        (public_dir / ".gitkeep").touch()
 
     def _render_cypher(self, cypher_dir: Path, ctx: dict) -> None:
         """Render Cypher schema files."""
