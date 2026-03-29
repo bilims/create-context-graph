@@ -529,6 +529,8 @@ agent_tools:
     cypher: |
       MATCH (n:IsEmri)
       WHERE n.domain = $domain AND n.ust_is_emri = true
+        AND n.kapali = false
+        AND n.durum_adi NOT IN ['Kapatildi', 'Iptal']
         AND ($durum = 'hepsi' OR n.durum_adi = $durum)
       OPTIONAL MATCH (n)-[:URUNUR]->(u:Urun)
       RETURN n.isemrino AS isemrino,
@@ -551,20 +553,19 @@ agent_tools:
       MATCH (f:Fire)-[:MAKINEDE]->(m:Makine)
       WHERE f.domain = $domain
         AND ($db_yil = 'hepsi' OR f.db_yil = $db_yil)
-      WITH m.aciklama AS makine_aciklama,
-           m.makine_kodu AS makine_kodu,
-           m.istasyon_kodu AS istasyon_kodu,
-           count(f) AS fire_kayit_sayisi,
-           sum(f.firemiktari) AS toplam_fire,
-           collect(DISTINCT f.fire_grubu) AS fire_gruplari,
-           avg(f.firemiktari) AS ortalama_fire,
-           stDev(f.firemiktari) AS std_dev_fire
-      RETURN makine_aciklama, makine_kodu, istasyon_kodu,
-             fire_kayit_sayisi, toplam_fire, ortalama_fire,
-             std_dev_fire,
-             (ortalama_fire + 3 * std_dev_fire) AS sigma3_esigi,
-             fire_gruplari
-      ORDER BY toplam_fire DESC
+      WITH m, count(f) AS fire_kayit_sayisi, sum(f.firemiktari) AS toplam_fire,
+           collect(DISTINCT f.fire_grubu) AS fire_gruplari
+      WITH collect({makine: m.aciklama, kod: m.makine_kodu, ist: m.istasyon_kodu,
+                     kayit: fire_kayit_sayisi, toplam: toplam_fire, grp: fire_gruplari}) AS tum,
+           avg(toplam_fire) AS genel_ort, stDev(toplam_fire) AS genel_std
+      UNWIND tum AS r
+      RETURN r.makine AS makine_aciklama, r.kod AS makine_kodu, r.ist AS istasyon_kodu,
+             r.kayit AS fire_kayit_sayisi, r.toplam AS toplam_fire,
+             genel_ort AS tum_makineler_ortalama, genel_std AS tum_makineler_std,
+             (genel_ort + 3 * genel_std) AS sigma3_esigi,
+             CASE WHEN r.toplam > (genel_ort + 3 * genel_std) THEN true ELSE false END AS outlier,
+             r.grp AS fire_gruplari
+      ORDER BY r.toplam DESC
       LIMIT 20
 
   - name: fire_neden_analizi
@@ -626,20 +627,27 @@ agent_tools:
       LIMIT 25
 
   - name: istasyon_kapasite_analizi
-    description: "İstasyon bazında makine sayısı ve fire yükünü analiz eder. Darboğaz tespiti için kullanılır."
+    description: "İstasyon bazında operasyon yükü, makine sayısı ve fire'ı birlikte analiz eder. Darboğaz tespiti için kullanılır."
     parameters: []
     cypher: |
       MATCH (m:Makine)-[:ISTASYONDA]->(ist:Istasyon)
       WHERE m.domain = $domain
       WITH ist, count(m) AS makine_sayisi
+      OPTIONAL MATCH (op:Operasyon)-[:ISTASYONDA]->(ist)
+      WHERE op.domain = $domain
+      WITH ist, makine_sayisi, count(DISTINCT op) AS operasyon_sayisi
       OPTIONAL MATCH (f:Fire)-[:MAKINEDE]->(m2:Makine)-[:ISTASYONDA]->(ist)
       WHERE f.domain = $domain
       RETURN ist.istisim AS istasyon_adi,
              ist.istkodu AS istasyon_kodu,
              makine_sayisi,
+             operasyon_sayisi,
+             CASE WHEN makine_sayisi > 0
+               THEN toFloat(operasyon_sayisi) / makine_sayisi
+               ELSE 0.0 END AS operasyon_makine_orani,
              count(DISTINCT f) AS fire_kayit_sayisi,
              COALESCE(sum(f.firemiktari), 0) AS toplam_fire
-      ORDER BY toplam_fire DESC
+      ORDER BY operasyon_sayisi DESC
       LIMIT 20
 
   - name: recete_makine_matrisi
