@@ -647,7 +647,7 @@ agent_tools:
                ELSE 0.0 END AS makine_basi_yuk,
              count(DISTINCT f) AS fire_kayit_sayisi,
              COALESCE(sum(f.firemiktari), 0) AS toplam_fire
-      ORDER BY operasyon_sayisi DESC
+      ORDER BY aktif_is_emri DESC
       LIMIT 20
 
   - name: recete_makine_matrisi

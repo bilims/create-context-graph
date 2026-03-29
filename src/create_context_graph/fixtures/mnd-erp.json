@@ -228,6 +228,34 @@
         "istisim": "Arka Duvar Kesim",
         "name": "Arka Duvar Kesim",
         "istkodu": "460"
+      },
+      {
+        "istkodu": "530",
+        "istisim": "Ayiklama",
+        "name": "Ayiklama",
+        "makine_sayisi": 8,
+        "domain": "mnd-erp"
+      },
+      {
+        "istkodu": "810",
+        "istisim": "PP Ekstruzyon",
+        "name": "PP Ekstruzyon",
+        "makine_sayisi": 4,
+        "domain": "mnd-erp"
+      },
+      {
+        "istkodu": "140",
+        "istisim": "Arka Duvar Laminasyon",
+        "name": "Arka Duvar Laminasyon",
+        "makine_sayisi": 5,
+        "domain": "mnd-erp"
+      },
+      {
+        "istkodu": "910",
+        "istisim": "Ambalaj Yapma",
+        "name": "Ambalaj Yapma",
+        "makine_sayisi": 3,
+        "domain": "mnd-erp"
       }
     ],
     "Recete": [
@@ -691,7 +719,7 @@
         "name": "IZOLASYON — Ilk Ayar Firesi",
         "kayittarih": "2024-08-23T11:42:02.727000",
         "fire_grubu": "IZOLASYON",
-        "tezgah_inckeyno": 142,
+        "tezgah_inckeyno": 146,
         "isemrino": "2024:M00000001242550",
         "db_yil": "2024",
         "fire_nedeni": "Ilk Ayar Firesi",
@@ -702,7 +730,7 @@
         "name": "IZOLASYON — Malzeme Hatasi",
         "kayittarih": "2025-03-13T10:57:51.410000",
         "fire_grubu": "IZOLASYON",
-        "tezgah_inckeyno": 475,
+        "tezgah_inckeyno": 493,
         "isemrino": "2025:M00000001250175",
         "db_yil": "2025",
         "fire_nedeni": "Malzeme Hatasi",
@@ -713,7 +741,7 @@
         "name": "IZOLASYON — Ek Yeri Firesi",
         "kayittarih": "2025-07-23T15:54:37.993000",
         "fire_grubu": "IZOLASYON",
-        "tezgah_inckeyno": 475,
+        "tezgah_inckeyno": 493,
         "isemrino": "2025:M00000001256753",
         "db_yil": "2025",
         "fire_nedeni": "Ek Yeri Firesi",
