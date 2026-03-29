@@ -94,12 +94,12 @@ uvx create-context-graph my-app \
 
 The wizard offers four Neo4j connection options:
 
-| Option | Command | Description |
-|--------|---------|-------------|
-| **Neo4j Aura** (cloud) | *(no start needed)* | Free cloud database — import your `.env` from [console.neo4j.io](https://console.neo4j.io) |
-| **neo4j-local** | `make neo4j-start` | Lightweight local Neo4j, no Docker required (needs Node.js) |
-| **Docker** | `make docker-up` | Full Neo4j via Docker Compose |
-| **Existing** | *(no start needed)* | Connect to any running Neo4j instance |
+| Option                 | Command             | Description                                                                                |
+| ---------------------- | ------------------- | ------------------------------------------------------------------------------------------ |
+| **Neo4j Aura** (cloud) | _(no start needed)_ | Free cloud database — import your `.env` from [console.neo4j.io](https://console.neo4j.io) |
+| **neo4j-local**        | `make neo4j-start`  | Lightweight local Neo4j, no Docker required (needs Node.js)                                |
+| **Docker**             | `make docker-up`    | Full Neo4j via Docker Compose                                                              |
+| **Existing**           | _(no start needed)_ | Connect to any running Neo4j instance                                                      |
 
 ```bash
 cd my-app
@@ -118,21 +118,22 @@ make start         # Start backend (port 8000) + frontend (port 3000)
 
 ## Supported Domains
 
-22 industry domains, each with a purpose-built ontology, sample data, agent tools, and demo scenarios:
+23 industry domains, each with a purpose-built ontology, sample data, agent tools, and demo scenarios:
 
-| Domain | Key Entities | Domain | Key Entities |
-|--------|-------------|--------|-------------|
-| Financial Services | Account, Transaction, Decision, Policy | Real Estate | Property, Listing, Agent, Inspection |
-| Healthcare | Patient, Provider, Diagnosis, Treatment | Vacation & Hospitality | Resort, Booking, Guest, Activity |
-| Retail & E-Commerce | Customer, Product, Order, Review | Oil & Gas | Well, Reservoir, Equipment, Permit |
-| Manufacturing | Machine, Part, WorkOrder, Supplier | Data Journalism | Source, Story, Claim, Investigation |
-| Scientific Research | Researcher, Paper, Dataset, Grant | Trip Planning | Destination, Hotel, Activity, Itinerary |
-| GenAI / LLM Ops | Model, Experiment, Prompt, Evaluation | GIS & Cartography | Feature, Layer, Survey, Boundary |
-| Agent Memory | Agent, Conversation, Memory, ToolCall | Wildlife Management | Species, Sighting, Habitat, Camera |
-| Gaming | Player, Character, Quest, Guild | Conservation | Site, Species, Program, Funding |
-| Personal Knowledge | Note, Contact, Project, Topic | Golf & Sports Mgmt | Course, Player, Round, Tournament |
-| Digital Twin | Asset, Sensor, Reading, Alert | Software Engineering | Repository, Issue, PR, Deployment |
-| Product Management | Feature, Epic, UserPersona, Metric | Hospitality | Hotel, Room, Reservation, Service |
+| Domain              | Key Entities                                                                     | Domain                 | Key Entities                            |
+| ------------------- | -------------------------------------------------------------------------------- | ---------------------- | --------------------------------------- |
+| Financial Services  | Account, Transaction, Decision, Policy                                           | Real Estate            | Property, Listing, Agent, Inspection    |
+| Healthcare          | Patient, Provider, Diagnosis, Treatment                                          | Vacation & Hospitality | Resort, Booking, Guest, Activity        |
+| Retail & E-Commerce | Customer, Product, Order, Review                                                 | Oil & Gas              | Well, Reservoir, Equipment, Permit      |
+| Manufacturing       | Machine, Part, WorkOrder, Supplier                                               | Data Journalism        | Source, Story, Claim, Investigation     |
+| Scientific Research | Researcher, Paper, Dataset, Grant                                                | Trip Planning          | Destination, Hotel, Activity, Itinerary |
+| GenAI / LLM Ops     | Model, Experiment, Prompt, Evaluation                                            | GIS & Cartography      | Feature, Layer, Survey, Boundary        |
+| Agent Memory        | Agent, Conversation, Memory, ToolCall                                            | Wildlife Management    | Species, Sighting, Habitat, Camera      |
+| Gaming              | Player, Character, Quest, Guild                                                  | Conservation           | Site, Species, Program, Funding         |
+| Personal Knowledge  | Note, Contact, Project, Topic                                                    | Golf & Sports Mgmt     | Course, Player, Round, Tournament       |
+| Digital Twin        | Asset, Sensor, Reading, Alert                                                    | Software Engineering   | Repository, Issue, PR, Deployment       |
+| Product Management  | Feature, Epic, UserPersona, Metric                                               | Hospitality            | Hotel, Room, Reservation, Service       |
+| **MND ERP**         | IsEmri, Urun, Makine, Recete, Operasyon, Fire, Tedarikci, Musteri, Ulke, DisOlay |                        |                                         |
 
 ```bash
 # List all available domains
@@ -145,15 +146,15 @@ create-context-graph --list-domains
 
 Import real data from your existing tools instead of (or in addition to) synthetic demo data:
 
-| Service | What's Imported | Auth |
-|---------|----------------|------|
-| **GitHub** | Issues, PRs, commits, contributors | Personal access token |
-| **Notion** | Pages, databases, users | Integration token |
-| **Jira** | Issues, sprints, users | API token |
-| **Slack** | Channel messages, threads, users | Bot OAuth token |
-| **Gmail** | Emails (last 30 days) | Google Workspace CLI or OAuth2 |
-| **Google Calendar** | Events, attendees (last 90 days) | Google Workspace CLI or OAuth2 |
-| **Salesforce** | Accounts, contacts, opportunities | Username/password |
+| Service             | What's Imported                    | Auth                           |
+| ------------------- | ---------------------------------- | ------------------------------ |
+| **GitHub**          | Issues, PRs, commits, contributors | Personal access token          |
+| **Notion**          | Pages, databases, users            | Integration token              |
+| **Jira**            | Issues, sprints, users             | API token                      |
+| **Slack**           | Channel messages, threads, users   | Bot OAuth token                |
+| **Gmail**           | Emails (last 30 days)              | Google Workspace CLI or OAuth2 |
+| **Google Calendar** | Events, attendees (last 90 days)   | Google Workspace CLI or OAuth2 |
+| **Salesforce**      | Accounts, contacts, opportunities  | Username/password              |
 
 Connectors run at scaffold time to populate initial data. They're also generated into your project so you can re-import with `make import`:
 
@@ -167,16 +168,16 @@ make import-and-seed   # Import and seed into Neo4j
 
 Select your preferred agent framework at project creation time:
 
-| Framework | Description |
-|-----------|-------------|
-| **PydanticAI** | Structured tool definitions with Pydantic models and `RunContext` | Full streaming |
-| **Claude Agent SDK** | Anthropic tool-use with agentic loop | Full streaming |
-| **OpenAI Agents SDK** | `@function_tool` decorators with `Runner.run()` | Full streaming |
-| **LangGraph** | Stateful graph-based agent workflow with `create_react_agent()` | Full streaming |
-| **CrewAI** | Multi-agent crew with role-based tools | Tool streaming |
-| **Strands** | Tool-use agents with Anthropic model | Tool streaming |
-| **Google ADK** | Gemini agents with `FunctionTool` calling | Full streaming |
-| **Anthropic Tools** | Modular tool registry with Anthropic API agentic loop | Full streaming |
+| Framework             | Description                                                       |
+| --------------------- | ----------------------------------------------------------------- | -------------- |
+| **PydanticAI**        | Structured tool definitions with Pydantic models and `RunContext` | Full streaming |
+| **Claude Agent SDK**  | Anthropic tool-use with agentic loop                              | Full streaming |
+| **OpenAI Agents SDK** | `@function_tool` decorators with `Runner.run()`                   | Full streaming |
+| **LangGraph**         | Stateful graph-based agent workflow with `create_react_agent()`   | Full streaming |
+| **CrewAI**            | Multi-agent crew with role-based tools                            | Tool streaming |
+| **Strands**           | Tool-use agents with Anthropic model                              | Tool streaming |
+| **Google ADK**        | Gemini agents with `FunctionTool` calling                         | Full streaming |
+| **Anthropic Tools**   | Modular tool registry with Anthropic API agentic loop             | Full streaming |
 
 All frameworks share the same FastAPI HTTP layer, Neo4j client, and frontend. Only the agent implementation differs. "Full streaming" means token-by-token text + real-time tool calls. "Tool streaming" means real-time tool calls with text delivered at the end.
 
@@ -283,17 +284,17 @@ create-context-graph /tmp/test-app --domain software-engineering --framework pyd
 
 ### Makefile Targets
 
-| Target | Description | Requirements |
-|--------|-------------|--------------|
-| `make test` | Run fast unit tests (510 tests) | None |
-| `make test-slow` | Full suite including matrix + perf (708 tests) | None |
-| `make test-matrix` | Domain × framework matrix only (176 combos) | None |
-| `make test-coverage` | Tests with HTML coverage report | None |
-| `make smoke-test` | E2E smoke tests for 3 key frameworks | Neo4j + LLM API keys |
-| `make lint` | Run ruff linter | ruff |
-| `make scaffold` | Scaffold a test project to `/tmp/test-scaffold` | None |
-| `make build` | Build Python package (sdist + wheel) | None |
-| `make docs` | Start Docusaurus dev server | Node.js |
+| Target               | Description                                     | Requirements         |
+| -------------------- | ----------------------------------------------- | -------------------- |
+| `make test`          | Run fast unit tests (510 tests)                 | None                 |
+| `make test-slow`     | Full suite including matrix + perf (708 tests)  | None                 |
+| `make test-matrix`   | Domain × framework matrix only (176 combos)     | None                 |
+| `make test-coverage` | Tests with HTML coverage report                 | None                 |
+| `make smoke-test`    | E2E smoke tests for 3 key frameworks            | Neo4j + LLM API keys |
+| `make lint`          | Run ruff linter                                 | ruff                 |
+| `make scaffold`      | Scaffold a test project to `/tmp/test-scaffold` | None                 |
+| `make build`         | Build Python package (sdist + wheel)            | None                 |
+| `make docs`          | Start Docusaurus dev server                     | Node.js              |
 
 ### E2E Smoke Tests
 
@@ -308,7 +309,7 @@ python scripts/e2e_smoke_test.py --domain financial-services --framework pydanti
 python scripts/e2e_smoke_test.py --domain real-estate --framework google-adk --quick
 python scripts/e2e_smoke_test.py --domain trip-planning --framework strands --quick
 
-# Test all 22 domains with one framework
+# Test all 23 domains with one framework
 python scripts/e2e_smoke_test.py --all-domains --framework pydanticai --quick
 
 # Full mode (all prompts per scenario, not just first)
@@ -316,6 +317,7 @@ python scripts/e2e_smoke_test.py --domain healthcare --framework claude-agent-sd
 ```
 
 **Required environment variables:**
+
 - `NEO4J_URI`, `NEO4J_USERNAME`, `NEO4J_PASSWORD` — Neo4j connection (Aura, Docker, or local)
 - `ANTHROPIC_API_KEY` — for Claude-based frameworks (PydanticAI, Claude Agent SDK, Anthropic Tools, Strands, CrewAI)
 - `OPENAI_API_KEY` — for OpenAI-based frameworks (OpenAI Agents, LangGraph)
@@ -325,11 +327,11 @@ python scripts/e2e_smoke_test.py --domain healthcare --framework claude-agent-sd
 
 GitHub Actions (`.github/workflows/ci.yml`) runs automatically:
 
-| Job | Trigger | Description |
-|-----|---------|-------------|
-| **test** | All pushes + PRs | Unit tests on Python 3.11 and 3.12 |
-| **lint** | All pushes + PRs | Ruff linter on `src/` and `tests/` |
-| **matrix** | Push to `main` only | All 176 domain × framework scaffold combinations |
+| Job            | Trigger             | Description                                                        |
+| -------------- | ------------------- | ------------------------------------------------------------------ |
+| **test**       | All pushes + PRs    | Unit tests on Python 3.11 and 3.12                                 |
+| **lint**       | All pushes + PRs    | Ruff linter on `src/` and `tests/`                                 |
+| **matrix**     | Push to `main` only | All 176 domain × framework scaffold combinations                   |
 | **smoke-test** | Push to `main` only | E2E tests for all 8 frameworks (scaffold → install → start → chat) |
 
 The smoke-test CI job is gated behind a `SMOKE_TESTS_ENABLED` repository variable. To enable it:
@@ -359,6 +361,7 @@ uv publish
 ```
 
 After publishing, users can install with:
+
 ```bash
 uvx create-context-graph       # Ephemeral (recommended)
 pip install create-context-graph   # Permanent install
@@ -374,6 +377,7 @@ npm publish --access public
 ```
 
 After publishing, users can run with:
+
 ```bash
 npx create-context-graph
 ```
@@ -393,10 +397,12 @@ git push origin v0.1.0
 ```
 
 This triggers two GitHub Actions workflows:
+
 - **publish-pypi.yml** — Builds and publishes to PyPI (uses trusted publishing / OIDC)
 - **publish-npm.yml** — Publishes the npm wrapper to npmjs.com
 
 **Setup required:**
+
 - **PyPI:** Configure [trusted publishing](https://docs.pypi.org/trusted-publishers/) for this repo, or set a `PYPI_API_TOKEN` secret
 - **npm:** Set an `NPM_TOKEN` secret in the repository settings
 
