@@ -42,7 +42,10 @@ docs/.docusaurus/
 
 # Generated test output
 /foobar/
+/gemini-demo/
+/references/
 
 tmp-e2e-tests/
 tmp*/
 var-folders*/
+.gstack/
