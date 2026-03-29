@@ -1,0 +1,1165 @@
+{
+  "domain": "mnd-erp",
+  "entities": {
+    "Urun": [
+      {
+        "stok_adi": "TAHTA PALET 750X1.520",
+        "birim_kodu": "AD",
+        "name": "TAHTA PALET 750X1.520",
+        "stok_kodu": "960000104",
+        "grup_kodu": "B"
+      },
+      {
+        "stok_adi": "TAHTA PALET 600X1.400",
+        "birim_kodu": "AD",
+        "name": "TAHTA PALET 600X1.400",
+        "stok_kodu": "960000112",
+        "grup_kodu": "B"
+      },
+      {
+        "stok_adi": "KARTON KUTU (NO:13) C+B-TST E:360 X B:650 X Y:390 - MND BASKILI",
+        "birim_kodu": "AD",
+        "name": "KARTON KUTU (NO:13) C+B-TST E:360 X B:650 X Y:390 - MND BASKILI",
+        "stok_kodu": "930000013",
+        "grup_kodu": "B"
+      },
+      {
+        "stok_adi": "KARTON KUTU (NO:5) C+B-TST E:505 X B:1.030 X Y:265 - MND BASKILI",
+        "birim_kodu": "AD",
+        "name": "KARTON KUTU (NO:5) C+B-TST E:505 X B:1.030 X Y:265 - MND BASKILI",
+        "stok_kodu": "930000005",
+        "grup_kodu": "B"
+      },
+      {
+        "stok_adi": "KARTON KUTU (NO:4) C+B-TST E:330 X B:500 X Y:360 - BASKISIZ",
+        "birim_kodu": "AD",
+        "name": "KARTON KUTU (NO:4) C+B-TST E:330 X B:500 X Y:360 - BASKISIZ",
+        "stok_kodu": "930000004",
+        "grup_kodu": "B"
+      },
+      {
+        "stok_adi": "TAHTA PALET 700X2.700",
+        "birim_kodu": "AD",
+        "name": "TAHTA PALET 700X2.700",
+        "stok_kodu": "960000123",
+        "grup_kodu": "B"
+      },
+      {
+        "stok_adi": "TAHTA PALET 890X1.420 (MAX. 890)",
+        "birim_kodu": "AD",
+        "name": "TAHTA PALET 890X1.420 (MAX. 890)",
+        "stok_kodu": "960000111",
+        "grup_kodu": "B"
+      },
+      {
+        "stok_adi": "SUNTA KAPAK 18MM 1.200X1.200",
+        "birim_kodu": "AD",
+        "name": "SUNTA KAPAK 18MM 1.200X1.200",
+        "stok_kodu": "960000230",
+        "grup_kodu": "B"
+      },
+      {
+        "stok_adi": "TAHTA PALET 620X1.650",
+        "birim_kodu": "AD",
+        "name": "TAHTA PALET 620X1.650",
+        "stok_kodu": "960000132",
+        "grup_kodu": "B"
+      },
+      {
+        "stok_adi": "KARTON KUTU (NO:10) C+B-TST E:680 X B:360 X Y:500 - BASKILI",
+        "birim_kodu": "AD",
+        "name": "KARTON KUTU (NO:10) C+B-TST E:680 X B:360 X Y:500 - BASKILI",
+        "stok_kodu": "930000010",
+        "grup_kodu": "B"
+      },
+      {
+        "stok_adi": "KARTON KUTU (NO:21) C+B-TST E:350 X B:350 X Y:1.010 - BASKISIZ",
+        "birim_kodu": "AD",
+        "name": "KARTON KUTU (NO:21) C+B-TST E:350 X B:350 X Y:1.010 - BASKISIZ",
+        "stok_kodu": "930000021",
+        "grup_kodu": "B"
+      },
+      {
+        "stok_adi": "KARTON KUTU (NO:104) C+B-TST E:220 X B:1.210 X Y:330 - BASKISIZ",
+        "birim_kodu": "AD",
+        "name": "KARTON KUTU (NO:104) C+B-TST E:220 X B:1.210 X Y:330 - BASKISIZ",
+        "stok_kodu": "931000104",
+        "grup_kodu": "B"
+      },
+      {
+        "stok_adi": "SUNTA KAPAK 18MM 690X2.000",
+        "birim_kodu": "AD",
+        "name": "SUNTA KAPAK 18MM 690X2.000",
+        "stok_kodu": "960000226",
+        "grup_kodu": "B"
+      },
+      {
+        "stok_adi": "KARTON KUTU (NO:105) C+B-TST E:450 X B:1.570 X Y:330 - BASKISIZ",
+        "birim_kodu": "AD",
+        "name": "KARTON KUTU (NO:105) C+B-TST E:450 X B:1.570 X Y:330 - BASKISIZ",
+        "stok_kodu": "931000105",
+        "grup_kodu": "B"
+      },
+      {
+        "stok_adi": "TAHTA PALET KAPAGI 890X990",
+        "birim_kodu": "AD",
+        "name": "TAHTA PALET KAPAGI 890X990",
+        "stok_kodu": "960000209",
+        "grup_kodu": "B"
+      }
+    ],
+    "Makine": [
+      {
+        "aciklama": "PRES KAGIT ARKA DUVAR-1",
+        "makine_kodu": "461",
+        "name": "PRES KAGIT ARKA DUVAR-1",
+        "istasyon_kodu": "460",
+        "inckeyno": 416
+      },
+      {
+        "aciklama": "IZOLASYON AYIKLAMA-1",
+        "makine_kodu": "531",
+        "name": "IZOLASYON AYIKLAMA-1",
+        "istasyon_kodu": "530",
+        "inckeyno": 112
+      },
+      {
+        "aciklama": "PRES KAGIT ARKA DUVAR-4",
+        "makine_kodu": "467",
+        "name": "PRES KAGIT ARKA DUVAR-4",
+        "istasyon_kodu": "460",
+        "inckeyno": 423
+      },
+      {
+        "aciklama": "PP LEVHA EKSTRÜZYON",
+        "makine_kodu": "811",
+        "name": "PP LEVHA EKSTRÜZYON",
+        "istasyon_kodu": "810",
+        "inckeyno": 493
+      },
+      {
+        "aciklama": "LAMINASYON (TUTKALLI-1)",
+        "makine_kodu": "143",
+        "name": "LAMINASYON (TUTKALLI-1)",
+        "istasyon_kodu": "140",
+        "inckeyno": 451
+      },
+      {
+        "aciklama": "PRES 100/1 (BEAM PRES)",
+        "makine_kodu": "426",
+        "name": "PRES 100/1 (BEAM PRES)",
+        "istasyon_kodu": "420",
+        "inckeyno": 373
+      },
+      {
+        "aciklama": "KISSCUT AMBALAJLAMA",
+        "makine_kodu": "917",
+        "name": "KISSCUT AMBALAJLAMA",
+        "istasyon_kodu": "910",
+        "inckeyno": 450
+      },
+      {
+        "aciklama": "PRES 100/5 (BEAM PRES)",
+        "makine_kodu": "422",
+        "name": "PRES 100/5 (BEAM PRES)",
+        "istasyon_kodu": "420",
+        "inckeyno": 91
+      },
+      {
+        "aciklama": "ARKA DUVAR LAMINASYON-1 (44)",
+        "makine_kodu": "141",
+        "name": "ARKA DUVAR LAMINASYON-1 (44)",
+        "istasyon_kodu": "140",
+        "inckeyno": 418
+      },
+      {
+        "aciklama": "AYRACLAMA-1",
+        "makine_kodu": "545",
+        "name": "AYRACLAMA-1",
+        "istasyon_kodu": "540",
+        "inckeyno": 146
+      }
+    ],
+    "Istasyon": [
+      {
+        "makine_sayisi": 35,
+        "istisim": "Isletme Disi",
+        "name": "Isletme Disi",
+        "istkodu": "ISD"
+      },
+      {
+        "makine_sayisi": 26,
+        "istisim": "Dikis",
+        "name": "Dikis",
+        "istkodu": "500"
+      },
+      {
+        "makine_sayisi": 15,
+        "istisim": "Plastik Enjeksiyon",
+        "name": "Plastik Enjeksiyon",
+        "istkodu": "P400"
+      },
+      {
+        "makine_sayisi": 12,
+        "istisim": "El Gruplama",
+        "name": "El Gruplama",
+        "istkodu": "540"
+      },
+      {
+        "makine_sayisi": 12,
+        "istisim": "Plastik CFF-Ultrasonik Kaynak",
+        "name": "Plastik CFF-Ultrasonik Kaynak",
+        "istkodu": "P500"
+      },
+      {
+        "makine_sayisi": 12,
+        "istisim": "Plastik CFF-Balans",
+        "name": "Plastik CFF-Balans",
+        "istkodu": "P700"
+      },
+      {
+        "makine_sayisi": 11,
+        "istisim": "Pres Konveyorlu",
+        "name": "Pres Konveyorlu",
+        "istkodu": "420"
+      },
+      {
+        "makine_sayisi": 10,
+        "istisim": "Arka Duvar Kesim",
+        "name": "Arka Duvar Kesim",
+        "istkodu": "460"
+      }
+    ],
+    "Recete": [
+      {
+        "makine_sayisi": 1,
+        "mamul_kodu": "0031-000776",
+        "mamul_adi": "ISOLATION ASSEMBLY-03",
+        "name": "ISOLATION ASSEMBLY-03",
+        "operasyon_sayisi": 1,
+        "recete_inckeyno": "31733"
+      },
+      {
+        "makine_sayisi": 1,
+        "mamul_kodu": "0031-000784",
+        "mamul_adi": "ISOLATION ASSEMBLY-11",
+        "name": "ISOLATION ASSEMBLY-11",
+        "operasyon_sayisi": 1,
+        "recete_inckeyno": "31476"
+      },
+      {
+        "makine_sayisi": 1,
+        "mamul_kodu": "0031-000785",
+        "mamul_adi": "ISOLATION ASSEMBLY-12",
+        "name": "ISOLATION ASSEMBLY-12",
+        "operasyon_sayisi": 1,
+        "recete_inckeyno": "31477"
+      },
+      {
+        "makine_sayisi": 1,
+        "mamul_kodu": "0031-000786",
+        "mamul_adi": "ISOLATION ASSEMBLY-13",
+        "name": "ISOLATION ASSEMBLY-13",
+        "operasyon_sayisi": 1,
+        "recete_inckeyno": "31478"
+      },
+      {
+        "makine_sayisi": 1,
+        "mamul_kodu": "0031-000787",
+        "mamul_adi": "ISOLATION ASSEMBLY-14",
+        "name": "ISOLATION ASSEMBLY-14",
+        "operasyon_sayisi": 1,
+        "recete_inckeyno": "31479"
+      },
+      {
+        "makine_sayisi": 1,
+        "mamul_kodu": "0031-000789",
+        "mamul_adi": "ISOLATION ASSEMBLY-16",
+        "name": "ISOLATION ASSEMBLY-16",
+        "operasyon_sayisi": 1,
+        "recete_inckeyno": "31480"
+      },
+      {
+        "makine_sayisi": 1,
+        "mamul_kodu": "0031-000790",
+        "mamul_adi": "ISOLATION ASSEMBLY-17",
+        "name": "ISOLATION ASSEMBLY-17",
+        "operasyon_sayisi": 1,
+        "recete_inckeyno": "31481"
+      },
+      {
+        "makine_sayisi": 1,
+        "mamul_kodu": "0031-000791",
+        "mamul_adi": "ISOLATION ASSEMBLY-18",
+        "name": "ISOLATION ASSEMBLY-18",
+        "operasyon_sayisi": 1,
+        "recete_inckeyno": "31482"
+      },
+      {
+        "makine_sayisi": 1,
+        "mamul_kodu": "0031-000792",
+        "mamul_adi": "ISOLATION ASSEMBLY-19",
+        "name": "ISOLATION ASSEMBLY-19",
+        "operasyon_sayisi": 1,
+        "recete_inckeyno": "31483"
+      },
+      {
+        "makine_sayisi": 1,
+        "mamul_kodu": "0031-000793",
+        "mamul_adi": "ISOLATION ASSEMBLY-20",
+        "name": "ISOLATION ASSEMBLY-20",
+        "operasyon_sayisi": 1,
+        "recete_inckeyno": "31780"
+      }
+    ],
+    "Tedarikci": [
+      {
+        "cari_isim": "FTC ME TRADING LLC ",
+        "il": "",
+        "ilce": "",
+        "ulke_kodu": "AE",
+        "name": "FTC ME TRADING LLC ",
+        "cari_kod": "331187",
+        "grup_kodu": "I"
+      },
+      {
+        "cari_isim": "ANDYMARK",
+        "il": "",
+        "ilce": "",
+        "ulke_kodu": "AS",
+        "name": "ANDYMARK",
+        "cari_kod": "331025",
+        "grup_kodu": "C"
+      },
+      {
+        "cari_isim": "CROWN GENERAL N.V.",
+        "il": "TESSENDERLO",
+        "ilce": "",
+        "ulke_kodu": "BE",
+        "name": "CROWN GENERAL N.V.",
+        "cari_kod": "331010",
+        "grup_kodu": "I"
+      },
+      {
+        "cari_isim": "AVERY DENNISON BELGIUM BVBA",
+        "il": "TURNHOUT",
+        "ilce": "",
+        "ulke_kodu": "BE",
+        "name": "AVERY DENNISON BELGIUM BVBA",
+        "cari_kod": "331028",
+        "grup_kodu": "I"
+      },
+      {
+        "cari_isim": "KANEKA BELGIUM NV",
+        "il": "OEVEL",
+        "ilce": "WESTERLO",
+        "ulke_kodu": "BE",
+        "name": "KANEKA BELGIUM NV",
+        "cari_kod": "331031",
+        "grup_kodu": "I"
+      },
+      {
+        "cari_isim": "SEKISUI ALVEO AG",
+        "il": "LUZERN",
+        "ilce": "",
+        "ulke_kodu": "CH",
+        "name": "SEKISUI ALVEO AG",
+        "cari_kod": "331076",
+        "grup_kodu": "I"
+      },
+      {
+        "cari_isim": "KUNSHAN DAPENG PRECISION MACHINERY CO., LTD.",
+        "il": "Suzhou",
+        "ilce": "",
+        "ulke_kodu": "CN",
+        "name": "KUNSHAN DAPENG PRECISION MACHINERY CO., LTD.",
+        "cari_kod": "331149",
+        "grup_kodu": "C"
+      },
+      {
+        "cari_isim": "CHANGZHOU DAHUA IMP. AND EXP. (GROUP) CORP.,LTD.",
+        "il": "",
+        "ilce": "",
+        "ulke_kodu": "CN",
+        "name": "CHANGZHOU DAHUA IMP. AND EXP. (GROUP) CORP.,LTD.",
+        "cari_kod": "331178",
+        "grup_kodu": "I"
+      }
+    ],
+    "Musteri": [
+      {
+        "cari_isim": "BOSCH TERMOTEKNIK ISITMA VE KLIMA SAN.VE TIC.A.S.",
+        "toplam_ciro": 7425304.86003474,
+        "il": "MANISA",
+        "ulke_kodu": "TR",
+        "name": "BOSCH TERMOTEKNIK ISITMA VE KLIMA SAN.VE TIC.A.S.",
+        "ciro_2024": 3011713.0943252025,
+        "ciro_2025": 3345687.8519409043,
+        "ciro_2026": 1067903.9137686288,
+        "cari_kod": "120612",
+        "grup_kodu": "M",
+        "musteri_tipi": "YERLI"
+      },
+      {
+        "cari_isim": "VESTEL BEYAZ ESYA SAN. TIC. A.S.-EURO",
+        "toplam_ciro": 7331057.667463684,
+        "il": "MANISA",
+        "ulke_kodu": "TR",
+        "name": "VESTEL BEYAZ ESYA SAN. TIC. A.S.-EURO",
+        "ciro_2024": 4564156.020126561,
+        "ciro_2025": 2492992.4785413463,
+        "ciro_2026": 273909.16879575106,
+        "cari_kod": "120123",
+        "grup_kodu": "M",
+        "musteri_tipi": "YERLI"
+      },
+      {
+        "cari_isim": "ARCELIK-LG KLIMA SAN. TIC. A.S.-USD",
+        "toplam_ciro": 4243807.705995405,
+        "il": "KOCAELI",
+        "ulke_kodu": "TR",
+        "name": "ARCELIK-LG KLIMA SAN. TIC. A.S.-USD",
+        "ciro_2024": 1729479.0506841794,
+        "ciro_2025": 2345262.681109807,
+        "ciro_2026": 169065.9742014181,
+        "cari_kod": "120344",
+        "grup_kodu": "M",
+        "musteri_tipi": "YERLI"
+      },
+      {
+        "cari_isim": "BEKO ITALY MANUFACTURING S.R.L. (ITA)",
+        "toplam_ciro": 3976202.5913385423,
+        "il": "MILANO",
+        "ulke_kodu": "IT",
+        "name": "BEKO ITALY MANUFACTURING S.R.L. (ITA)",
+        "ciro_2024": 1501114.3929425029,
+        "ciro_2025": 2012523.941892061,
+        "ciro_2026": 462564.2565039731,
+        "cari_kod": "212069",
+        "grup_kodu": "M",
+        "musteri_tipi": "IHRACAT"
+      },
+      {
+        "cari_isim": "VESTEL ELEKTRONIK A.S.-USD",
+        "toplam_ciro": 3062938.688108611,
+        "il": "MANISA",
+        "ulke_kodu": "TR",
+        "name": "VESTEL ELEKTRONIK A.S.-USD",
+        "ciro_2024": 1768490.2932725388,
+        "ciro_2025": 1169185.1896658542,
+        "ciro_2026": 125263.20517021877,
+        "cari_kod": "120032",
+        "grup_kodu": "M",
+        "musteri_tipi": "YERLI"
+      },
+      {
+        "cari_isim": "DAIKIN ISITMA VE SOGUTMA SISTEMLERI SAN.TIC.A.S.(EURO)",
+        "toplam_ciro": 3055107.4756065775,
+        "il": "ISTANBUL",
+        "ulke_kodu": "TR",
+        "name": "DAIKIN ISITMA VE SOGUTMA SISTEMLERI SAN.TIC.A.S.(EURO)",
+        "ciro_2024": 1108041.3071119387,
+        "ciro_2025": 1512676.8046565258,
+        "ciro_2026": 434389.3638381101,
+        "cari_kod": "120856",
+        "grup_kodu": "M",
+        "musteri_tipi": "YERLI"
+      },
+      {
+        "cari_isim": "MITSUBISHI ELECTRIC TURKEY KLIMA SISTEMLERI URETIM A.S-EURO (MACT-I)",
+        "toplam_ciro": 2606252.611292658,
+        "il": "MANISA",
+        "ulke_kodu": "TR",
+        "name": "MITSUBISHI ELECTRIC TURKEY KLIMA SISTEMLERI URETIM A.S-EURO (MACT-I)",
+        "ciro_2024": 784062.2102918923,
+        "ciro_2025": 1187376.076085955,
+        "ciro_2026": 634814.3249147981,
+        "cari_kod": "120210",
+        "grup_kodu": "M",
+        "musteri_tipi": "YERLI"
+      },
+      {
+        "cari_isim": "BMC OTOMOTIV SANAYI VE TICARET AS",
+        "toplam_ciro": 2174381.797490492,
+        "il": "IZMIR",
+        "ulke_kodu": "TR",
+        "name": "BMC OTOMOTIV SANAYI VE TICARET AS",
+        "ciro_2024": 1164034.1114337759,
+        "ciro_2025": 836485.9353255818,
+        "ciro_2026": 173861.75073113275,
+        "cari_kod": "120049",
+        "grup_kodu": "M",
+        "musteri_tipi": "YERLI"
+      }
+    ],
+    "IsEmri": [
+      {
+        "ust_is_emri": true,
+        "teslimtarihi": "2026-11-16",
+        "kapali": false,
+        "islemdurum": 0,
+        "stokkodu": "8201726354",
+        "urun_adi": "MOUSSE ETANCHEITE G LFF (7REM26354GA1) (T1,5X46,3X105,8)",
+        "miktar": 10800.0,
+        "db_yil": "2026",
+        "sonrakiisemrino": "",
+        "refisemrino": "2026:M00000001266659",
+        "tarih": "2026-11-16T00:00:00",
+        "name": "M00000001266659 — MOUSSE ETANCHEITE G LFF (7REM26354GA1) (T1,5X46,3X105,8)",
+        "recete_inckeyno": "29241",
+        "isemrino_raw": "M00000001266659",
+        "isemrino": "2026:M00000001266659",
+        "durum_adi": "Bekliyor"
+      },
+      {
+        "ust_is_emri": true,
+        "teslimtarihi": "2026-11-03",
+        "kapali": false,
+        "islemdurum": 0,
+        "stokkodu": "8201726352",
+        "urun_adi": "MOUSSE ETANCHEITE D LFF (7REM26352DA1) (T1,5X46,3X105,8)",
+        "miktar": 14400.0,
+        "db_yil": "2026",
+        "sonrakiisemrino": "",
+        "refisemrino": "2026:M00000001266709",
+        "tarih": "2026-11-03T00:00:00",
+        "name": "M00000001266709 — MOUSSE ETANCHEITE D LFF (7REM26352DA1) (T1,5X46,3X105,8)",
+        "recete_inckeyno": "33677",
+        "isemrino_raw": "M00000001266709",
+        "isemrino": "2026:M00000001266709",
+        "durum_adi": "Bekliyor"
+      },
+      {
+        "ust_is_emri": true,
+        "teslimtarihi": "2026-09-16",
+        "kapali": false,
+        "islemdurum": 0,
+        "stokkodu": "40006358",
+        "miktar": 43200.0,
+        "urun_adi": "SPONGE (T20X20X150)",
+        "db_yil": "2026",
+        "sonrakiisemrino": "",
+        "refisemrino": "2026:M00000001266905",
+        "tarih": "2026-09-16T00:00:00",
+        "name": "M00000001266905 — SPONGE (T20X20X150)",
+        "recete_inckeyno": "29918",
+        "isemrino_raw": "M00000001266905",
+        "isemrino": "2026:M00000001266905",
+        "durum_adi": "Bekliyor"
+      },
+      {
+        "ust_is_emri": true,
+        "teslimtarihi": "2026-09-03",
+        "kapali": false,
+        "islemdurum": 0,
+        "stokkodu": "40014311",
+        "urun_adi": "GASKET BASE/F-DUCT EOLO T5X6,5X755",
+        "miktar": 10071.0,
+        "db_yil": "2026",
+        "sonrakiisemrino": "",
+        "refisemrino": "2026:M00000001266897",
+        "tarih": "2026-09-03T00:00:00",
+        "name": "M00000001266897 — GASKET BASE/F-DUCT EOLO T5X6,5X755",
+        "recete_inckeyno": "24234",
+        "isemrino_raw": "M00000001266897",
+        "isemrino": "2026:M00000001266897",
+        "durum_adi": "Bekliyor"
+      },
+      {
+        "ust_is_emri": true,
+        "teslimtarihi": "2026-08-29",
+        "kapali": false,
+        "islemdurum": 0,
+        "stokkodu": "8737915334",
+        "urun_adi": "INSULATION BACK PANEL TOP T15X464,5X494,2",
+        "miktar": 396.0,
+        "db_yil": "2026",
+        "sonrakiisemrino": "",
+        "refisemrino": "2026:M00000001265539",
+        "tarih": "2026-08-29T00:00:00",
+        "name": "M00000001265539 — INSULATION BACK PANEL TOP T15X464,5X494,2",
+        "recete_inckeyno": "27438",
+        "isemrino_raw": "M00000001265539",
+        "isemrino": "2026:M00000001265539",
+        "durum_adi": "Bekliyor"
+      },
+      {
+        "ust_is_emri": true,
+        "teslimtarihi": "2026-08-29",
+        "kapali": false,
+        "islemdurum": 0,
+        "stokkodu": "8718659555",
+        "miktar": 240.0,
+        "urun_adi": "INSULATION SIDE PANEL T10X325X897",
+        "db_yil": "2026",
+        "sonrakiisemrino": "",
+        "refisemrino": "2026:M00000001265537",
+        "tarih": "2026-08-29T00:00:00",
+        "name": "M00000001265537 — INSULATION SIDE PANEL T10X325X897",
+        "recete_inckeyno": "28379",
+        "isemrino_raw": "M00000001265537",
+        "isemrino": "2026:M00000001265537",
+        "durum_adi": "Bekliyor"
+      },
+      {
+        "ust_is_emri": true,
+        "teslimtarihi": "2026-08-27",
+        "kapali": false,
+        "islemdurum": 0,
+        "stokkodu": "70006244",
+        "miktar": 5740.0,
+        "urun_adi": "INSULATING BACK PANEL COND",
+        "db_yil": "2026",
+        "sonrakiisemrino": "",
+        "refisemrino": "2026:M00000001266901",
+        "tarih": "2026-08-27T00:00:00",
+        "name": "M00000001266901 — INSULATING BACK PANEL COND",
+        "recete_inckeyno": "30921",
+        "isemrino_raw": "M00000001266901",
+        "isemrino": "2026:M00000001266901",
+        "durum_adi": "Bekliyor"
+      },
+      {
+        "ust_is_emri": true,
+        "teslimtarihi": "2026-08-26",
+        "kapali": false,
+        "islemdurum": 0,
+        "stokkodu": "40014311",
+        "urun_adi": "GASKET BASE/F-DUCT EOLO T5X6,5X755",
+        "miktar": 11190.0,
+        "db_yil": "2026",
+        "sonrakiisemrino": "",
+        "refisemrino": "2026:M00000001266896",
+        "tarih": "2026-08-26T00:00:00",
+        "name": "M00000001266896 — GASKET BASE/F-DUCT EOLO T5X6,5X755",
+        "recete_inckeyno": "24234",
+        "isemrino_raw": "M00000001266896",
+        "isemrino": "2026:M00000001266896",
+        "durum_adi": "Bekliyor"
+      },
+      {
+        "ust_is_emri": true,
+        "teslimtarihi": "2026-08-18",
+        "kapali": false,
+        "islemdurum": 0,
+        "stokkodu": "8201726354",
+        "urun_adi": "MOUSSE ETANCHEITE G LFF (7REM26354GA1) (T1,5X46,3X105,8)",
+        "miktar": 14400.0,
+        "db_yil": "2026",
+        "sonrakiisemrino": "",
+        "refisemrino": "2026:M00000001266658",
+        "tarih": "2026-08-18T00:00:00",
+        "name": "M00000001266658 — MOUSSE ETANCHEITE G LFF (7REM26354GA1) (T1,5X46,3X105,8)",
+        "recete_inckeyno": "29241",
+        "isemrino_raw": "M00000001266658",
+        "isemrino": "2026:M00000001266658",
+        "durum_adi": "Bekliyor"
+      },
+      {
+        "ust_is_emri": true,
+        "teslimtarihi": "2026-08-13",
+        "kapali": false,
+        "islemdurum": 0,
+        "stokkodu": "40006358",
+        "miktar": 43200.0,
+        "urun_adi": "SPONGE (T20X20X150)",
+        "db_yil": "2026",
+        "sonrakiisemrino": "",
+        "refisemrino": "2026:M00000001266904",
+        "tarih": "2026-08-13T00:00:00",
+        "name": "M00000001266904 — SPONGE (T20X20X150)",
+        "recete_inckeyno": "29918",
+        "isemrino_raw": "M00000001266904",
+        "isemrino": "2026:M00000001266904",
+        "durum_adi": "Bekliyor"
+      }
+    ],
+    "Fire": [
+      {
+        "firemiktari": 11700.0,
+        "name": "IZOLASYON — Kalınlık Uygunsuzluğu",
+        "kayittarih": "2025-06-13T08:49:09.183000",
+        "fire_grubu": "IZOLASYON",
+        "tezgah_inckeyno": 112,
+        "isemrino": "2025:M00000001256455",
+        "db_yil": "2025",
+        "fire_nedeni": "Kalınlık Uygunsuzluğu",
+        "inckeyno": "2025:4184"
+      },
+      {
+        "firemiktari": 10944.0,
+        "name": "IZOLASYON — Ilk Ayar Firesi",
+        "kayittarih": "2024-08-23T11:42:02.727000",
+        "fire_grubu": "IZOLASYON",
+        "tezgah_inckeyno": 142,
+        "isemrino": "2024:M00000001242550",
+        "db_yil": "2024",
+        "fire_nedeni": "Ilk Ayar Firesi",
+        "inckeyno": "2024:9558"
+      },
+      {
+        "firemiktari": 8208.0,
+        "name": "IZOLASYON — Malzeme Hatasi",
+        "kayittarih": "2025-03-13T10:57:51.410000",
+        "fire_grubu": "IZOLASYON",
+        "tezgah_inckeyno": 475,
+        "isemrino": "2025:M00000001250175",
+        "db_yil": "2025",
+        "fire_nedeni": "Malzeme Hatasi",
+        "inckeyno": "2025:1934"
+      },
+      {
+        "firemiktari": 8208.0,
+        "name": "IZOLASYON — Ek Yeri Firesi",
+        "kayittarih": "2025-07-23T15:54:37.993000",
+        "fire_grubu": "IZOLASYON",
+        "tezgah_inckeyno": 475,
+        "isemrino": "2025:M00000001256753",
+        "db_yil": "2025",
+        "fire_nedeni": "Ek Yeri Firesi",
+        "inckeyno": "2025:5321"
+      },
+      {
+        "firemiktari": 8000.0,
+        "name": "IZOLASYON — Kesim Firesi",
+        "kayittarih": "2024-10-24T09:40:22.800000",
+        "fire_grubu": "IZOLASYON",
+        "tezgah_inckeyno": 112,
+        "isemrino": "2024:M00000001246823",
+        "db_yil": "2024",
+        "fire_nedeni": "Kesim Firesi",
+        "inckeyno": "2024:11720"
+      }
+    ],
+    "BakimTicketi": [
+      {
+        "makine_adi": "LAMINASYON (TUTKALLI-2- ÇIFT KAFA)",
+        "ticketno": "2026:452",
+        "tanim": "",
+        "makine_kodu": "144",
+        "name": "LAMINASYON (TUTKALLI-2- ÇIFT KAFA)",
+        "db_yil": "2026"
+      },
+      {
+        "makine_adi": "GAP CUTTING",
+        "ticketno": "2026:246",
+        "tanim": "",
+        "makine_kodu": "304",
+        "name": "GAP CUTTING",
+        "bitirme_tarihi": "2026-01-09T17:45:33.260000",
+        "db_yil": "2026"
+      },
+      {
+        "makine_adi": "SLITTER-1 (CIFT SAFT)",
+        "ticketno": "2026:461",
+        "tanim": "",
+        "makine_kodu": "201",
+        "name": "SLITTER-1 (CIFT SAFT)",
+        "db_yil": "2026"
+      },
+      {
+        "makine_adi": "DILIMLEME MAKINESI (50MM)(SP)**",
+        "ticketno": "2026:91",
+        "tanim": "",
+        "makine_kodu": "373",
+        "name": "DILIMLEME MAKINESI (50MM)(SP)**",
+        "bitirme_tarihi": "2026-01-06T16:40:14.863000",
+        "db_yil": "2026"
+      },
+      {
+        "makine_adi": "ROTARY VARGEL (OTOMATIK)",
+        "ticketno": "2026:454",
+        "tanim": "",
+        "makine_kodu": "145",
+        "name": "ROTARY VARGEL (OTOMATIK)",
+        "db_yil": "2026"
+      }
+    ],
+    "Ulke": [
+      {
+        "ab_uyesi": true,
+        "ulke_adi": "Italya",
+        "ulke_kodu": "IT",
+        "name": "Italya"
+      },
+      {
+        "ab_uyesi": false,
+        "ulke_adi": "Turkiye",
+        "ulke_kodu": "TR",
+        "name": "Turkiye"
+      },
+      {
+        "ab_uyesi": true,
+        "ulke_adi": "Almanya",
+        "ulke_kodu": "DE",
+        "name": "Almanya"
+      },
+      {
+        "ab_uyesi": true,
+        "ulke_adi": "Fransa",
+        "ulke_kodu": "FR",
+        "name": "Fransa"
+      },
+      {
+        "ab_uyesi": false,
+        "ulke_adi": "Cin",
+        "ulke_kodu": "CN",
+        "name": "Cin"
+      }
+    ],
+    "DisOlay": [
+      {
+        "aciklama": "Avrupa Birligi, RoHS direktifini genisleterek yeni kimyasal madde sinirlamalari getirdi. Kursun, kadmiyum ve belirli alev geciktiriciler iceren bilesenlerin kullanimi kisitlaniyor.",
+        "bolge": "AB",
+        "tarih": "2026-01-15",
+        "siddet": "YUKSEK",
+        "etkilenen_sektorler": "ELEKTRONIK,OTOMOTIV,BEYAZ_ESYA",
+        "tip": "MEVZUAT",
+        "olay_id": "EVT-AB-ROHS-2026",
+        "baslik": "AB RoHS Direktifi Genisletmesi 2026",
+        "name": "AB RoHS Direktifi Genisletmesi 2026",
+        "etkilenen_ulkeler": "DE,FR,IT,ES,NL,BE,AT,PL,RO,SE,CZ,HU"
+      },
+      {
+        "aciklama": "Cin'den gelen bakirve aluminyum ihracatinda kisitlama. Temin sureleri 2-3 kat uzadi, fiyatlar %40 artti.",
+        "bolge": "ASYA",
+        "tarih": "2025-09-01",
+        "siddet": "KRITIK",
+        "etkilenen_sektorler": "IMALAT,ELEKTRONIK",
+        "tip": "TEDARIK_ZINCIRI",
+        "olay_id": "EVT-HAMMADDE-KRIZ-2025",
+        "baslik": "Kritik Hammadde Tedarik Krizi",
+        "name": "Kritik Hammadde Tedarik Krizi",
+        "etkilenen_ulkeler": "CN,TW,KR"
+      },
+      {
+        "aciklama": "Dogalgaz fiyatlarinda ani artis. Enerji yogun uretim yapan tesislerde maliyet %25-35 artti. Ozellikle izolasyon ve plastik uretimi etkilendi.",
+        "bolge": "AVRUPA",
+        "tarih": "2025-11-01",
+        "siddet": "YUKSEK",
+        "etkilenen_sektorler": "ENERJI,IMALAT",
+        "tip": "EKONOMIK",
+        "olay_id": "EVT-ENERJI-KRIZI-2025",
+        "baslik": "Avrupa Dogalgaz Fiyat Soku",
+        "name": "Avrupa Dogalgaz Fiyat Soku",
+        "etkilenen_ulkeler": "DE,FR,IT,NL,BE"
+      }
+    ],
+    "Operasyon": [
+      {
+        "operasyon_id": "29977",
+        "tanim": "",
+        "sira_no": 0,
+        "name": "Pres Orta",
+        "recete_inckeyno": "2426",
+        "istasyon_kodu": "430",
+        "miktar": 672.0,
+        "istasyon_adi": "Pres Orta"
+      },
+      {
+        "operasyon_id": "29981",
+        "tanim": "EBATLANMIS (30FR XPE)+(2005/75) GRI T10x420x1.000",
+        "sira_no": 3,
+        "name": "Ebatlama — EBATLANMIS (30FR XPE)+(2005/75) GRI T10x420x1.000",
+        "recete_inckeyno": "2426",
+        "istasyon_kodu": "310",
+        "miktar": 7.0,
+        "istasyon_adi": "Ebatlama"
+      },
+      {
+        "operasyon_id": "29983",
+        "tanim": "LAMINE EDILMIS (30FR XPE)+(2005/75) GRI T10x1.000xR",
+        "sira_no": 4,
+        "name": "Laminasyon — LAMINE EDILMIS (30FR XPE)+(2005/75) GRI T10x1.000xR",
+        "recete_inckeyno": "2426",
+        "istasyon_kodu": "110",
+        "miktar": 2.94,
+        "istasyon_adi": "Laminasyon"
+      },
+      {
+        "operasyon_id": "30717",
+        "tanim": "",
+        "sira_no": 0,
+        "name": "Depodan Satis",
+        "recete_inckeyno": "2505",
+        "istasyon_kodu": "990",
+        "miktar": 4752.0,
+        "istasyon_adi": "Depodan Satis"
+      },
+      {
+        "operasyon_id": "31321",
+        "tanim": "",
+        "sira_no": 0,
+        "name": "Slitter",
+        "recete_inckeyno": "2576",
+        "istasyon_kodu": "200",
+        "miktar": 5300.0,
+        "istasyon_adi": "Slitter"
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "type": "MAKINEDE",
+      "source_label": "Fire",
+      "source_name": "IZOLASYON — Kalınlık Uygunsuzluğu",
+      "target_label": "Makine",
+      "target_name": "IZOLASYON AYIKLAMA-1"
+    },
+    {
+      "type": "MAKINEDE",
+      "source_label": "Fire",
+      "source_name": "IZOLASYON — Kesim Firesi",
+      "target_label": "Makine",
+      "target_name": "IZOLASYON AYIKLAMA-1"
+    },
+    {
+      "type": "ISTASYONDA",
+      "source_label": "Makine",
+      "source_name": "PRES 100/5 (BEAM PRES)",
+      "target_label": "Istasyon",
+      "target_name": "Pres Konveyorlu"
+    },
+    {
+      "type": "ISTASYONDA",
+      "source_label": "Makine",
+      "source_name": "PRES 100/1 (BEAM PRES)",
+      "target_label": "Istasyon",
+      "target_name": "Pres Konveyorlu"
+    },
+    {
+      "type": "ISTASYONDA",
+      "source_label": "Makine",
+      "source_name": "PRES KAGIT ARKA DUVAR-1",
+      "target_label": "Istasyon",
+      "target_name": "Arka Duvar Kesim"
+    },
+    {
+      "type": "ISTASYONDA",
+      "source_label": "Makine",
+      "source_name": "PRES KAGIT ARKA DUVAR-4",
+      "target_label": "Istasyon",
+      "target_name": "Arka Duvar Kesim"
+    },
+    {
+      "type": "ISTASYONDA",
+      "source_label": "Makine",
+      "source_name": "AYRACLAMA-1",
+      "target_label": "Istasyon",
+      "target_name": "El Gruplama"
+    },
+    {
+      "type": "BOLGEDE",
+      "source_label": "Tedarikci",
+      "source_name": "KUNSHAN DAPENG PRECISION MACHINERY CO., LTD.",
+      "target_label": "Ulke",
+      "target_name": "Cin"
+    },
+    {
+      "type": "BOLGEDE",
+      "source_label": "Tedarikci",
+      "source_name": "CHANGZHOU DAHUA IMP. AND EXP. (GROUP) CORP.,LTD.",
+      "target_label": "Ulke",
+      "target_name": "Cin"
+    },
+    {
+      "type": "BOLGEDE",
+      "source_label": "Musteri",
+      "source_name": "BOSCH TERMOTEKNIK ISITMA VE KLIMA SAN.VE TIC.A.S.",
+      "target_label": "Ulke",
+      "target_name": "Turkiye"
+    },
+    {
+      "type": "BOLGEDE",
+      "source_label": "Musteri",
+      "source_name": "VESTEL BEYAZ ESYA SAN. TIC. A.S.-EURO",
+      "target_label": "Ulke",
+      "target_name": "Turkiye"
+    },
+    {
+      "type": "BOLGEDE",
+      "source_label": "Musteri",
+      "source_name": "ARCELIK-LG KLIMA SAN. TIC. A.S.-USD",
+      "target_label": "Ulke",
+      "target_name": "Turkiye"
+    },
+    {
+      "type": "BOLGEDE",
+      "source_label": "Musteri",
+      "source_name": "BEKO ITALY MANUFACTURING S.R.L. (ITA)",
+      "target_label": "Ulke",
+      "target_name": "Italya"
+    },
+    {
+      "type": "BOLGEDE",
+      "source_label": "Musteri",
+      "source_name": "VESTEL ELEKTRONIK A.S.-USD",
+      "target_label": "Ulke",
+      "target_name": "Turkiye"
+    },
+    {
+      "type": "BOLGEDE",
+      "source_label": "Musteri",
+      "source_name": "DAIKIN ISITMA VE SOGUTMA SISTEMLERI SAN.TIC.A.S.(EURO)",
+      "target_label": "Ulke",
+      "target_name": "Turkiye"
+    },
+    {
+      "type": "BOLGEDE",
+      "source_label": "Musteri",
+      "source_name": "MITSUBISHI ELECTRIC TURKEY KLIMA SISTEMLERI URETIM A.S-EURO (MACT-I)",
+      "target_label": "Ulke",
+      "target_name": "Turkiye"
+    },
+    {
+      "type": "BOLGEDE",
+      "source_label": "Musteri",
+      "source_name": "BMC OTOMOTIV SANAYI VE TICARET AS",
+      "target_label": "Ulke",
+      "target_name": "Turkiye"
+    },
+    {
+      "type": "ETKILER",
+      "source_label": "DisOlay",
+      "source_name": "EVT-AB-ROHS-2026",
+      "target_label": "Ulke",
+      "target_name": "Italya"
+    },
+    {
+      "type": "ETKILER",
+      "source_label": "DisOlay",
+      "source_name": "EVT-AB-ROHS-2026",
+      "target_label": "Ulke",
+      "target_name": "Fransa"
+    },
+    {
+      "type": "ETKILER",
+      "source_label": "DisOlay",
+      "source_name": "EVT-AB-ROHS-2026",
+      "target_label": "Ulke",
+      "target_name": "Almanya"
+    },
+    {
+      "type": "ETKILER",
+      "source_label": "DisOlay",
+      "source_name": "EVT-HAMMADDE-KRIZ-2025",
+      "target_label": "Ulke",
+      "target_name": "Cin"
+    },
+    {
+      "type": "ETKILER",
+      "source_label": "DisOlay",
+      "source_name": "EVT-ENERJI-KRIZI-2025",
+      "target_label": "Ulke",
+      "target_name": "Italya"
+    },
+    {
+      "type": "ETKILER",
+      "source_label": "DisOlay",
+      "source_name": "EVT-ENERJI-KRIZI-2025",
+      "target_label": "Ulke",
+      "target_name": "Fransa"
+    },
+    {
+      "type": "ETKILER",
+      "source_label": "DisOlay",
+      "source_name": "EVT-ENERJI-KRIZI-2025",
+      "target_label": "Ulke",
+      "target_name": "Almanya"
+    }
+  ],
+  "documents": [
+    {
+      "template_id": "fire_raporu",
+      "template_name": "Fire Analiz Raporu",
+      "title": "Fire Analiz Raporu - 2024-2026 Donemi",
+      "content": "FIRE ANALIZ RAPORU\n\nHazirlanma Tarihi: 2026-03-15\nRapor Donemi: 2024-2026\n\nYONETICI OZETI\nBu rapor, toplam 5 kritik fire kaydini analiz etmektedir. En yuksek fire ureten makineler: PRES KAGIT ARKA DUVAR-1, IZOLASYON AYIKLAMA-1, PRES KAGIT ARKA DUVAR-4, PP LEVHA EKSTRÜZYON, LAMINASYON (TUTKALLI-1).\n\nMAKINE BAZINDA FIRE DAGILIMI\n- Fire #2025:4184: 11700.0 adet, Neden: Kalınlık Uygunsuzluğu, Grup: IZOLASYON\n- Fire #2024:9558: 10944.0 adet, Neden: Ilk Ayar Firesi, Grup: IZOLASYON\n- Fire #2025:1934: 8208.0 adet, Neden: Malzeme Hatasi, Grup: IZOLASYON\n- Fire #2025:5321: 8208.0 adet, Neden: Ek Yeri Firesi, Grup: IZOLASYON\n- Fire #2024:11720: 8000.0 adet, Neden: Kesim Firesi, Grup: IZOLASYON\n\nKOK NEDEN ANALIZI\nFire kayitlarinin buyuk cogunlugu kalip ayar hatalari ve hammadde kalite sorunlarindan kaynaklanmaktadir. Periyodik bakim eksikligi de onemli bir etkendir.\n\nAKSIYONLAR\n1. Yuksek fire ureten makinelerde bakim frekansi arttirilmalidir.\n2. Hammadde giris kalite kontrolu sikilaştirilmalidir.\n3. Operator egitim programi baslatilmalidir.\n"
+    },
+    {
+      "template_id": "tedarik_risk_raporu",
+      "template_name": "Tedarik Zinciri Risk Raporu",
+      "title": "Tedarik Zinciri Risk Raporu - 2026 Q1",
+      "content": "TEDARIK ZINCIRI RISK RAPORU\n\nHazirlanma Tarihi: 2026-03-15\n\nYONETICI OZETI\nToplam 8 tedarikci incelenmistir. Cografi dagilim: Italya, Turkiye, Almanya, Fransa, Cin.\n\nCOGRAFI DAGILIM\n- FTC ME TRADING LLC  (AE): Grup: I\n- ANDYMARK (AS): Grup: C\n- CROWN GENERAL N.V. (BE): Grup: I\n- AVERY DENNISON BELGIUM BVBA (BE): Grup: I\n- KANEKA BELGIUM NV (BE): Grup: I\n- SEKISUI ALVEO AG (CH): Grup: I\n- KUNSHAN DAPENG PRECISION MACHINERY CO., LTD. (CN): Grup: C\n- CHANGZHOU DAHUA IMP. AND EXP. (GROUP) CORP.,LTD. (CN): Grup: I\n\nRISK DEGERLENDIRMESI\n1. AB mevzuat riski: AB ulkelerindeki tedarikciler RoHS/REACH gibi cevre duzenlemelerine tabi.\n2. Tek kaynakli bagimlilik: Bazi kritik hammaddeler icin yalnizca bir tedarikci mevcut.\n3. Nakliye riski: Uzak Dogu tedarikcilerinde tedarik suresi belirsizligi devam etmekte.\n\nONERILER\n1. Kritik hammaddeler icin ikinci kaynak gelistirilmesi.\n2. AB mevzuat degisikliklerinin yakin takibi.\n3. Yerel tedarikci alternatiflerinin arastirilmasi.\n"
+    },
+    {
+      "template_id": "musteri_risk_raporu",
+      "template_name": "Musteri Portfoy ve Risk Raporu",
+      "title": "Musteri Portfoy Raporu - 2026 Q1",
+      "content": "MUSTERI PORTFOY VE RISK RAPORU\n\nHazirlanma Tarihi: 2026-03-15\n\nYONETICI OZETI\nToplam 8 musteri analiz edilmistir.\n\nMUSTERI CIRO TABLOSU\n- BOSCH TERMOTEKNIK ISITMA VE KLIMA SAN.VE TIC.A.S. (YERLI): 2024: 3,011,713 TL, 2025: 3,345,688 TL, 2026: 1,067,904 TL, Toplam: 7,425,305 TL\n- VESTEL BEYAZ ESYA SAN. TIC. A.S.-EURO (YERLI): 2024: 4,564,156 TL, 2025: 2,492,992 TL, 2026: 273,909 TL, Toplam: 7,331,058 TL\n- ARCELIK-LG KLIMA SAN. TIC. A.S.-USD (YERLI): 2024: 1,729,479 TL, 2025: 2,345,263 TL, 2026: 169,066 TL, Toplam: 4,243,808 TL\n- BEKO ITALY MANUFACTURING S.R.L. (ITA) (IHRACAT): 2024: 1,501,114 TL, 2025: 2,012,524 TL, 2026: 462,564 TL, Toplam: 3,976,203 TL\n- VESTEL ELEKTRONIK A.S.-USD (YERLI): 2024: 1,768,490 TL, 2025: 1,169,185 TL, 2026: 125,263 TL, Toplam: 3,062,939 TL\n- DAIKIN ISITMA VE SOGUTMA SISTEMLERI SAN.TIC.A.S.(EURO) (YERLI): 2024: 1,108,041 TL, 2025: 1,512,677 TL, 2026: 434,389 TL, Toplam: 3,055,107 TL\n- MITSUBISHI ELECTRIC TURKEY KLIMA SISTEMLERI URETIM A.S-EURO (MACT-I) (YERLI): 2024: 784,062 TL, 2025: 1,187,376 TL, 2026: 634,814 TL, Toplam: 2,606,253 TL\n- BMC OTOMOTIV SANAYI VE TICARET AS (YERLI): 2024: 1,164,034 TL, 2025: 836,486 TL, 2026: 173,862 TL, Toplam: 2,174,382 TL\n\nKONSANTRASYON ANALIZI\nIlk 3 musterinin toplam ciroya orani degerlendirilerek portfoy konsantrasyon riski belirlenmistir.\n\nKAYIP RISKI YUKSEK MUSTERILER\nCiro trendi dusen musteriler takibe alinmalidir.\n\nAKSIYONLAR\n1. Buyuk musteri bagimliligi azaltilmalidir.\n2. Ihracat musterileri icin doviz riski hedge edilmelidir.\n3. Kaybedilme riski olan musterilere ozel fiyat teklifi hazirlanmalidir.\n"
+    },
+    {
+      "template_id": "kapasite_raporu",
+      "template_name": "Uretim Kapasite ve Darbogaz Raporu",
+      "title": "Kapasite Raporu - 2026 Q1",
+      "content": "URETIM KAPASITE VE DARBOGAZ RAPORU\n\nHazirlanma Tarihi: 2026-03-15\n\nYONETICI OZETI\nToplam 8 istasyon ve 10 makine incelenmistir.\n\nISTASYON BAZINDA KAPASITE\n- Isletme Disi: Makine sayisi: 35\n- Dikis: Makine sayisi: 26\n- Plastik Enjeksiyon: Makine sayisi: 15\n- El Gruplama: Makine sayisi: 12\n- Plastik CFF-Ultrasonik Kaynak: Makine sayisi: 12\n- Plastik CFF-Balans: Makine sayisi: 12\n- Pres Konveyorlu: Makine sayisi: 11\n- Arka Duvar Kesim: Makine sayisi: 10\n\nDARBOGAZ TESPITI\nEn yogun istasyonlar makine basina dusen is emri yukunun yuksek olmasi nedeniyle darbogaz olusturmaktadir.\n\nONERILER\n1. Darbogaz istasyonlarina ek makine yatirimi degerlendirilmelidir.\n2. Vardiya duzeni optimize edilmelidir.\n3. Recete bazinda alternatif makine atamalari yapilmalidir.\n"
+    }
+  ],
+  "traces": [
+    {
+      "id": "fire_outlier_tespiti",
+      "task": "Hangi makineler 3-sigma sinirini asan anormal fire uretiminde?",
+      "steps": [
+        {
+          "thought": "Makine bazinda toplam fire miktarlarini hesaplamaliyim",
+          "action": "makine_fire_analizi aracini cagir",
+          "result": "Her makine icin toplam fire ve standart sapma hesaplandi"
+        },
+        {
+          "thought": "Ortalama ve standart sapmayi hesaplayip 3-sigma sinirini bul",
+          "action": "Istatistiksel hesaplama — ortalama + 3*std_dev esigi uygula",
+          "result": "2 makine 3-sigma sinirinin uzerinde fire uretiyor"
+        },
+        {
+          "thought": "Esigi asan makineler icin bakim ticket gecmisini kontrol et",
+          "action": "bakimticket_analizi aracini cagir ve korelasyon bak",
+          "result": "Yuksek fire ureten makinelerin bakim gecmisi incelendi"
+        }
+      ],
+      "outcome": "2 makine 3-sigma sinirini asti. Bakim frekansi arttirilmasi ve operator egitimi onerildi."
+    },
+    {
+      "id": "tedarik_zinciri_etki_analizi",
+      "task": "AB RoHS genislemesi tedarik zincirimizi nasil etkiler?",
+      "steps": [
+        {
+          "thought": "RoHS hangi ulkeleri etkiliyor? Etkilenen tedarikcilerimizi bulmaliyim.",
+          "action": "DisOlay -> Ulke -> Tedarikci impact chain sorgusu",
+          "result": "AB ulkelerindeki tedarikciler belirlendi"
+        },
+        {
+          "thought": "Etkilenen tedarikcilerin tedarik ettigi urunleri kontrol et",
+          "action": "TEDARIK_EDER iliskisi ile etkilenen urunleri listele",
+          "result": "Etkilenen urun listesi olusturuldu"
+        },
+        {
+          "thought": "AB musterilerinden gelen ciro ne kadar risk altinda?",
+          "action": "musteri_ciro_analizi — AB ulkeleri filtresi",
+          "result": "Risk altindaki toplam ciro hesaplandi"
+        }
+      ],
+      "outcome": "3 tedarikci etkileniyor. Alternatif kaynak gelistirmesi ve stok tampon artisi onerildi."
+    },
+    {
+      "id": "kapasite_darbogaz",
+      "task": "En yuksek is emri yukune sahip istasyon hangisi? Darbogaz nerede?",
+      "steps": [
+        {
+          "thought": "Aktif is emirlerini hangi istasyonlarda islem gordugunu bul",
+          "action": "istasyon_kapasite_analizi aracini cagir",
+          "result": "Istasyon bazinda yuk dagilimi elde edildi"
+        },
+        {
+          "thought": "Her istasyondaki makine basina dusen ortalama yuku hesapla",
+          "action": "Makine sayisi ile is emri yuku oranini karsilastir",
+          "result": "Kapasite kullanim oranlari hesaplandi"
+        },
+        {
+          "thought": "Recete bazinda hangi urunlerin darbogazda yogunlastigini tespit et",
+          "action": "recete_makine_matrisi aracini cagir",
+          "result": "Darbogaz istasyonundaki urunler belirlendi"
+        }
+      ],
+      "outcome": "En yogun istasyon %92 kapasite kullanımında. Ek vardiya veya makine yatirimi onerildi."
+    }
+  ]
+}

@@ -1,0 +1,729 @@
+inherits: _base
+
+domain:
+  id: mnd-erp
+  name: MND ERP
+  description: "MND üretim ERP sistemi — iş emirleri, makineler, reçeteler, fire kayıtları, bakım ve müşteri ciro analizi"
+  tagline: "Üretim verisini grafiğe dökün"
+  emoji: "🏭"
+
+entity_types:
+  - label: IsEmri
+    pole_type: EVENT
+    subtype: PRODUCTION_ORDER
+    color: "#d97706"
+    icon: clipboard-list
+    properties:
+      - name: isemrino
+        type: string
+        required: true
+        unique: true
+      - name: isemrino_raw
+        type: string
+      - name: name
+        type: string
+      - name: stokkodu
+        type: string
+      - name: urun_adi
+        type: string
+      - name: miktar
+        type: float
+      - name: tarih
+        type: datetime
+      - name: teslimtarihi
+        type: datetime
+      - name: kapali
+        type: boolean
+      - name: islemdurum
+        type: integer
+      - name: durum_adi
+        type: string
+        enum:
+          - Bekliyor
+          - Calisiyor
+          - Atlandi
+          - Ariza
+          - Durus
+          - Kapatildi
+          - Iptal
+      - name: recete_inckeyno
+        type: string
+      - name: refisemrino
+        type: string
+      - name: sonrakiisemrino
+        type: string
+      - name: ust_is_emri
+        type: boolean
+      - name: db_yil
+        type: string
+
+  - label: Urun
+    pole_type: OBJECT
+    subtype: PRODUCT
+    color: "#0ea5e9"
+    icon: box
+    properties:
+      - name: stok_kodu
+        type: string
+        required: true
+        unique: true
+      - name: stok_adi
+        type: string
+        required: true
+      - name: name
+        type: string
+      - name: grup_kodu
+        type: string
+      - name: birim_kodu
+        type: string
+
+  - label: Makine
+    pole_type: OBJECT
+    subtype: EQUIPMENT
+    color: "#475569"
+    icon: cog
+    properties:
+      - name: makine_kodu
+        type: string
+        required: true
+        unique: true
+      - name: aciklama
+        type: string
+        required: true
+      - name: name
+        type: string
+      - name: inckeyno
+        type: integer
+      - name: istasyon_kodu
+        type: string
+
+  - label: Istasyon
+    pole_type: LOCATION
+    subtype: PRODUCTION_STATION
+    color: "#0891b2"
+    icon: layout-grid
+    properties:
+      - name: istkodu
+        type: string
+        required: true
+        unique: true
+      - name: istisim
+        type: string
+        required: true
+      - name: name
+        type: string
+      - name: makine_sayisi
+        type: integer
+
+  - label: Recete
+    pole_type: OBJECT
+    subtype: RECIPE
+    color: "#059669"
+    icon: list-tree
+    properties:
+      - name: recete_inckeyno
+        type: string
+        required: true
+        unique: true
+      - name: mamul_kodu
+        type: string
+      - name: mamul_adi
+        type: string
+      - name: name
+        type: string
+      - name: operasyon_sayisi
+        type: integer
+      - name: makine_sayisi
+        type: integer
+
+  - label: Operasyon
+    pole_type: EVENT
+    subtype: OPERATION_STEP
+    color: "#6366f1"
+    icon: activity
+    properties:
+      - name: operasyon_id
+        type: string
+        required: true
+        unique: true
+      - name: name
+        type: string
+      - name: recete_inckeyno
+        type: string
+      - name: sira_no
+        type: integer
+      - name: istasyon_kodu
+        type: string
+      - name: istasyon_adi
+        type: string
+      - name: tanim
+        type: string
+      - name: miktar
+        type: float
+
+  - label: Tedarikci
+    pole_type: ORGANIZATION
+    subtype: VENDOR
+    color: "#7c3aed"
+    icon: truck
+    properties:
+      - name: cari_kod
+        type: string
+        required: true
+        unique: true
+      - name: cari_isim
+        type: string
+        required: true
+      - name: name
+        type: string
+      - name: ulke_kodu
+        type: string
+      - name: il
+        type: string
+      - name: ilce
+        type: string
+      - name: grup_kodu
+        type: string
+
+  - label: Musteri
+    pole_type: ORGANIZATION
+    subtype: CUSTOMER
+    color: "#db2777"
+    icon: users
+    properties:
+      - name: cari_kod
+        type: string
+        required: true
+        unique: true
+      - name: cari_isim
+        type: string
+        required: true
+      - name: name
+        type: string
+      - name: musteri_tipi
+        type: string
+        enum:
+          - YERLI
+          - IHRACAT
+          - ITHALAT
+      - name: ulke_kodu
+        type: string
+      - name: il
+        type: string
+      - name: grup_kodu
+        type: string
+      - name: ciro_2024
+        type: float
+      - name: ciro_2025
+        type: float
+      - name: ciro_2026
+        type: float
+      - name: toplam_ciro
+        type: float
+
+  - label: Fire
+    pole_type: EVENT
+    subtype: SCRAP_RECORD
+    color: "#ef4444"
+    icon: x-circle
+    properties:
+      - name: inckeyno
+        type: string
+        required: true
+        unique: true
+      - name: name
+        type: string
+      - name: firemiktari
+        type: float
+      - name: kayittarih
+        type: datetime
+      - name: fire_grubu
+        type: string
+      - name: fire_nedeni
+        type: string
+      - name: isemrino
+        type: string
+      - name: tezgah_inckeyno
+        type: integer
+      - name: db_yil
+        type: string
+
+  - label: BakimTicketi
+    pole_type: EVENT
+    subtype: MAINTENANCE_TICKET
+    color: "#f59e0b"
+    icon: wrench
+    properties:
+      - name: ticketno
+        type: string
+        required: true
+        unique: true
+      - name: name
+        type: string
+      - name: tanim
+        type: string
+      - name: baslama_tarihi
+        type: datetime
+      - name: bitirme_tarihi
+        type: datetime
+      - name: makine_kodu
+        type: string
+      - name: makine_adi
+        type: string
+      - name: db_yil
+        type: string
+
+  - label: Ulke
+    pole_type: LOCATION
+    subtype: COUNTRY
+    color: "#14b8a6"
+    icon: globe
+    properties:
+      - name: ulke_kodu
+        type: string
+        required: true
+        unique: true
+      - name: ulke_adi
+        type: string
+        required: true
+      - name: name
+        type: string
+      - name: ab_uyesi
+        type: boolean
+
+  - label: DisOlay
+    pole_type: EVENT
+    subtype: EXTERNAL_EVENT
+    color: "#f43f5e"
+    icon: alert-triangle
+    properties:
+      - name: olay_id
+        type: string
+        required: true
+        unique: true
+      - name: baslik
+        type: string
+      - name: name
+        type: string
+      - name: aciklama
+        type: string
+      - name: tip
+        type: string
+        enum:
+          - MEVZUAT
+          - TEDARIK_ZINCIRI
+          - EKONOMIK
+          - POLITIK
+          - DOGAL_AFET
+      - name: bolge
+        type: string
+      - name: siddet
+        type: string
+        enum:
+          - DUSUK
+          - ORTA
+          - YUKSEK
+          - KRITIK
+      - name: tarih
+        type: date
+      - name: etkilenen_sektorler
+        type: string
+      - name: etkilenen_ulkeler
+        type: string
+
+relationships:
+  # Üretim akışı
+  - type: URUNUR
+    source: IsEmri
+    target: Urun
+  - type: KULLANDIGI_RECETE
+    source: IsEmri
+    target: Recete
+  - type: ALT_IS_EMRI
+    source: IsEmri
+    target: IsEmri
+  - type: SONRAKI_OPERASYON
+    source: IsEmri
+    target: IsEmri
+
+  # Fire & bakım
+  - type: ISEMRINDE
+    source: Fire
+    target: IsEmri
+  - type: MAKINEDE
+    source: Fire
+    target: Makine
+  - type: MAKINEYI_KAPSAR
+    source: BakimTicketi
+    target: Makine
+
+  # Reçete & operasyon zinciri
+  - type: RECETESI_VAR
+    source: Urun
+    target: Recete
+  - type: MAKINEDE_ISLEM
+    source: Recete
+    target: Makine
+  - type: HAMMADDE_KULLANIR
+    source: Recete
+    target: Urun
+  - type: OPERASYON_ADIMI
+    source: Recete
+    target: Operasyon
+  - type: ISLEM_YAPILIR
+    source: Operasyon
+    target: Makine
+  - type: ISTASYONDA
+    source: Makine
+    target: Istasyon
+  - type: ISTASYONDA
+    source: Operasyon
+    target: Istasyon
+
+  # Ticari
+  - type: SATIN_ALIR
+    source: Musteri
+    target: Urun
+  - type: TEDARIK_EDER
+    source: Tedarikci
+    target: Urun
+
+  # Coğrafi & stratejik
+  - type: BOLGEDE
+    source: Tedarikci
+    target: Ulke
+  - type: BOLGEDE
+    source: Musteri
+    target: Ulke
+  - type: ETKILER
+    source: DisOlay
+    target: Ulke
+
+document_templates:
+  - id: fire_raporu
+    name: Fire Analiz Raporu
+    description: "Makine ve neden bazında fire analizi, outlier tespiti ve öneri"
+    count: 5
+    prompt_template: |
+      {domain} üretim tesisi için fire analiz raporu yaz. Aşağıdaki verileri kullan:
+      - Makineler: {entities[Makine]}
+      - Fire kayıtları özeti ve toplam miktarlar
+      Rapor: yönetici özeti, makine bazında fire dağılımı, kök neden analizi, 3-sigma outlier bulguları, aksiyonlar.
+    required_entities:
+      - Makine
+      - Fire
+
+  - id: tedarik_risk_raporu
+    name: Tedarik Zinciri Risk Raporu
+    description: "Coğrafi tedarikçi dağılımı, AB mevzuat riski, hammadde bağımlılığı"
+    count: 3
+    prompt_template: |
+      {domain} tedarik zinciri risk raporu yaz. Tedarikçiler: {entities[Tedarikci]}
+      Ülke dağılımı, AB mevzuat riski, tek kaynaklı bağımlılıklar, öneriler.
+    required_entities:
+      - Tedarikci
+      - Ulke
+      - Urun
+
+  - id: musteri_risk_raporu
+    name: "Müşteri Portföy ve Risk Raporu"
+    description: "Müşteri ciro trendleri, kayıp riski ve konsantrasyon analizi"
+    count: 2
+    prompt_template: |
+      {domain} ticari ekibi için müşteri portföy raporu yaz. Müşteriler: {entities[Musteri]}
+      Rapor: büyük müşteri konsantrasyonu, ciro trendi (2024-2026), kayıp riski yüksek müşteriler, aksiyonlar.
+    required_entities:
+      - Musteri
+      - Urun
+
+  - id: kapasite_raporu
+    name: "Üretim Kapasite ve Darboğaz Raporu"
+    description: "İstasyon ve makine bazında kapasite darboğazlarını analiz eder"
+    count: 2
+    prompt_template: |
+      {domain} üretim planlama için istasyon kapasite raporu hazırla. İstasyonlar: {entities[Istasyon]}
+      Rapor: darboğaz istasyonlar, makine yükleme oranı, açık iş emri dağılımı, kapasite artırma önerileri.
+    required_entities:
+      - Istasyon
+      - Makine
+      - Operasyon
+
+decision_traces:
+  - id: fire_outlier_tespiti
+    task: "Hangi makineler 3-sigma sınırını aşan anormal fire üretiminde?"
+    steps:
+      - thought: "Makine bazında toplam fire miktarlarını hesaplamalıyım"
+        action: "makine_fire_analizi aracını çağır"
+      - thought: "Ortalama ve standart sapmayı hesaplayıp 3-sigma sınırını bul"
+        action: "İstatistiksel hesaplama yap — ortalama + 3*std_dev eşiği uygula"
+      - thought: "Eşiği aşan makineler için bakım ticket geçmişini kontrol et"
+        action: "bakimticket_analizi aracını çağır ve korelasyon bak"
+    outcome_template: "{outlier_count} makine 3-sigma sınırını aştı. En kritik: {top_machine}. Son bakım tarihi: {last_maintenance}. Öneri: {recommendation}."
+
+  - id: tedarik_zinciri_etki_analizi
+    task: "AB RoHS genişlemesi tedarik zincirimizi nasıl etkiler?"
+    steps:
+      - thought: "RoHS hangi ülkeleri etkiliyor? Etkilenen tedarikçilerimizi bulmalıyım."
+        action: "DisOlay→Ülke→Tedarikçi impact chain sorgusu"
+      - thought: "Etkilenen tedarikçilerin tedarik ettiği ürünleri kontrol et"
+        action: "TEDARIK_EDER ilişkisi ile etkilenen ürünleri listele"
+      - thought: "AB müşterilerinden gelen ciro ne kadar risk altında?"
+        action: "müşteri_ciro_analizi — AB ülkeleri filtresi"
+    outcome_template: "{affected_suppliers} tedarikçi etkileniyor. Risk altındaki ciro: {at_risk_revenue}. Öneri: {recommendation}."
+
+  - id: kapasite_darbogaz
+    task: "En yüksek iş emri yüküne sahip istasyon hangisi? Darboğaz nerede?"
+    steps:
+      - thought: "Aktif iş emirlerini hangi istasyonlarda işlem gördüğünü bul"
+        action: "istasyon_kapasite_analizi aracını çağır"
+      - thought: "Her istasyondaki makine başına düşen ortalama yükü hesapla"
+        action: "Makine sayısı ile iş emri yükü oranını karşılaştır"
+      - thought: "Reçete bazında hangi ürünlerin darboğazda yoğunlaştığını tespit et"
+        action: "recete_makine_matrisi aracını çağır"
+    outcome_template: "{bottleneck_station} istasyonu %{utilization} kapasite kullanımında. {machine_count} makine ile {order_count} açık iş emri işliyor."
+
+demo_scenarios:
+  - name: Fire Analizi
+    prompts:
+      - "Hangi makinede en çok fire oluşuyor?"
+      - "Fire nedenlerinin dağılımını göster"
+      - "En çok tekrar eden fire grubu hangisi?"
+
+  - name: "İş Emri Takibi"
+    prompts:
+      - "Çalışıyor durumundaki iş emirlerini listele"
+      - "Teslim tarihi geçmiş aktif iş emirleri hangileri?"
+      - "En yüksek kalan miktara sahip iş emirleri"
+
+  - name: "Bakım ve Fire Korelasyonu"
+    prompts:
+      - "Bakım kaydı olmayan ama yüksek fire veren makineler hangileri?"
+      - "En çok bakım ticket açılan makinelerde fire durumu nasıl?"
+
+  - name: "Kapasite ve Darboğaz"
+    prompts:
+      - "Hangi istasyon en fazla iş emri taşıyor?"
+      - "Reçete ataması en fazla olan makineler hangileri?"
+      - "Teslimatı geciken iş emirleri hangi istasyonlarda yoğunlaşıyor?"
+
+  - name: "Müşteri Portföy"
+    prompts:
+      - "En yüksek ciro getiren müşteriler kimler?"
+      - "2024'ten 2026'ya ciroya göre müşteri trendi nasıldır?"
+      - "Hangi müşteriler sadece tek ürün alıyor (konsantrasyon riski)?"
+
+  - name: Stratejik Analiz
+    prompts:
+      - "AB RoHS direktifi hangi tedarikçilerimizi etkiler?"
+      - "AB ülkelerindeki müşterilerden ne kadar ciro geliyor?"
+      - "En çok kullanılan hammaddeler hangileri?"
+
+agent_tools:
+  - name: aktif_is_emirleri
+    description: "Aktif iş emirlerini listeler. Durum ve ürün adına göre filtre uygulanabilir."
+    parameters:
+      - name: durum
+        type: string
+        description: "Durum filtresi: Bekliyor, Calisiyor, Atlandi veya 'hepsi'"
+        default: "hepsi"
+    cypher: |
+      MATCH (n:IsEmri)
+      WHERE n.domain = $domain AND n.ust_is_emri = true
+        AND ($durum = 'hepsi' OR n.durum_adi = $durum)
+      OPTIONAL MATCH (n)-[:URUNUR]->(u:Urun)
+      RETURN n.isemrino AS isemrino,
+             n.urun_adi AS urun_adi,
+             n.miktar AS miktar,
+             n.durum_adi AS durum_adi,
+             n.teslimtarihi AS teslimtarihi,
+             n.db_yil AS yil
+      ORDER BY n.teslimtarihi ASC
+      LIMIT 50
+
+  - name: makine_fire_analizi
+    description: "Makine bazında fire (ıskarta) analizi. Hangi makinede ne kadar fire var? Yıl bazında filtre desteklenir."
+    parameters:
+      - name: db_yil
+        type: string
+        description: "Yıl filtresi: 2024, 2025, 2026 veya 'hepsi'"
+        default: "hepsi"
+    cypher: |
+      MATCH (f:Fire)-[:MAKINEDE]->(m:Makine)
+      WHERE f.domain = $domain
+        AND ($db_yil = 'hepsi' OR f.db_yil = $db_yil)
+      WITH m.aciklama AS makine_aciklama,
+           m.makine_kodu AS makine_kodu,
+           m.istasyon_kodu AS istasyon_kodu,
+           count(f) AS fire_kayit_sayisi,
+           sum(f.firemiktari) AS toplam_fire,
+           collect(DISTINCT f.fire_grubu) AS fire_gruplari,
+           avg(f.firemiktari) AS ortalama_fire,
+           stDev(f.firemiktari) AS std_dev_fire
+      RETURN makine_aciklama, makine_kodu, istasyon_kodu,
+             fire_kayit_sayisi, toplam_fire, ortalama_fire,
+             std_dev_fire,
+             (ortalama_fire + 3 * std_dev_fire) AS sigma3_esigi,
+             fire_gruplari
+      ORDER BY toplam_fire DESC
+      LIMIT 20
+
+  - name: fire_neden_analizi
+    description: "Fire nedenlerini gruplar. En çok fire hangi nedenden oluşuyor?"
+    parameters:
+      - name: grup
+        type: string
+        description: "Fire grubu filtresi veya 'hepsi'"
+        default: "hepsi"
+    cypher: |
+      MATCH (f:Fire)
+      WHERE f.domain = $domain
+        AND ($grup = 'hepsi' OR f.fire_grubu = $grup)
+      WITH f.fire_grubu AS fire_grubu,
+           f.fire_nedeni AS fire_nedeni,
+           count(f) AS kayit_sayisi,
+           sum(f.firemiktari) AS toplam_fire,
+           avg(f.firemiktari) AS ortalama_fire
+      RETURN fire_grubu, fire_nedeni, kayit_sayisi, toplam_fire, ortalama_fire
+      ORDER BY toplam_fire DESC
+      LIMIT 30
+
+  - name: bakimticket_analizi
+    description: "Bakım ticketlarını makine bazında analiz eder. Fire korelasyonu da gösterilir."
+    parameters: []
+    cypher: |
+      MATCH (bt:BakimTicketi)-[:MAKINEYI_KAPSAR]->(m:Makine)
+      WHERE bt.domain = $domain
+      WITH m, count(bt) AS ticket_sayisi
+      OPTIONAL MATCH (f:Fire)-[:MAKINEDE]->(m)
+      WHERE f.domain = $domain
+      RETURN m.aciklama AS makine_aciklama,
+             m.makine_kodu AS makine_kodu,
+             m.istasyon_kodu AS istasyon_kodu,
+             ticket_sayisi,
+             count(f) AS fire_kayit_sayisi,
+             sum(f.firemiktari) AS toplam_fire
+      ORDER BY ticket_sayisi DESC
+      LIMIT 20
+
+  - name: urun_fire_ozeti
+    description: "Ürün bazında fire özetini gösterir. Hangi ürün en çok fire veriyor?"
+    parameters:
+      - name: grup_kodu
+        type: string
+        description: "Stok grubu filtresi veya 'hepsi'"
+        default: "hepsi"
+    cypher: |
+      MATCH (f:Fire)-[:ISEMRINDE]->(ie:IsEmri)-[:URUNUR]->(u:Urun)
+      WHERE f.domain = $domain
+        AND ($grup_kodu = 'hepsi' OR u.grup_kodu = $grup_kodu)
+      WITH u.stok_adi AS stok_adi,
+           u.stok_kodu AS stok_kodu,
+           u.grup_kodu AS grup_kodu,
+           count(f) AS fire_kayit_sayisi,
+           sum(f.firemiktari) AS toplam_fire
+      RETURN stok_adi, stok_kodu, grup_kodu, fire_kayit_sayisi, toplam_fire
+      ORDER BY toplam_fire DESC
+      LIMIT 25
+
+  - name: istasyon_kapasite_analizi
+    description: "İstasyon bazında makine sayısı ve fire yükünü analiz eder. Darboğaz tespiti için kullanılır."
+    parameters: []
+    cypher: |
+      MATCH (m:Makine)-[:ISTASYONDA]->(ist:Istasyon)
+      WHERE m.domain = $domain
+      WITH ist, count(m) AS makine_sayisi
+      OPTIONAL MATCH (f:Fire)-[:MAKINEDE]->(m2:Makine)-[:ISTASYONDA]->(ist)
+      WHERE f.domain = $domain
+      RETURN ist.istisim AS istasyon_adi,
+             ist.istkodu AS istasyon_kodu,
+             makine_sayisi,
+             count(DISTINCT f) AS fire_kayit_sayisi,
+             COALESCE(sum(f.firemiktari), 0) AS toplam_fire
+      ORDER BY toplam_fire DESC
+      LIMIT 20
+
+  - name: recete_makine_matrisi
+    description: "Bir ürünün reçetesinde hangi makineler kullanıldığını gösterir. Ürün bazında makine bağımlılığı analizi."
+    parameters:
+      - name: stok_kodu
+        type: string
+        description: "Ürün stok kodu"
+        default: ""
+    cypher: |
+      MATCH (u:Urun)-[:RECETESI_VAR]->(r:Recete)-[:MAKINEDE_ISLEM]->(m:Makine)
+      WHERE u.domain = $domain
+        AND ($stok_kodu = '' OR u.stok_kodu = $stok_kodu)
+      OPTIONAL MATCH (m)-[:ISTASYONDA]->(ist:Istasyon)
+      RETURN u.stok_adi AS urun_adi,
+             u.stok_kodu AS stok_kodu,
+             r.operasyon_sayisi AS operasyon_sayisi,
+             collect(DISTINCT m.aciklama) AS makineler,
+             collect(DISTINCT ist.istisim) AS istasyonlar
+      ORDER BY r.operasyon_sayisi DESC
+      LIMIT 20
+
+  - name: musteri_ciro_analizi
+    description: "Müşteri bazında ciro analizi. Yıllar arası trend ve büyük müşteri konsantrasyonu gösterilir."
+    parameters:
+      - name: musteri_tipi
+        type: string
+        description: "YERLI, IHRACAT veya 'hepsi'"
+        default: "hepsi"
+    cypher: |
+      MATCH (c:Musteri)
+      WHERE c.domain = $domain
+        AND ($musteri_tipi = 'hepsi' OR c.musteri_tipi = $musteri_tipi)
+      OPTIONAL MATCH (c)-[:SATIN_ALIR]->(u:Urun)
+      WITH c, count(DISTINCT u) AS satin_aldigi_urun_sayisi
+      RETURN c.cari_isim AS musteri_adi,
+             c.musteri_tipi AS musteri_tipi,
+             c.ciro_2024 AS ciro_2024,
+             c.ciro_2025 AS ciro_2025,
+             c.ciro_2026 AS ciro_2026,
+             c.toplam_ciro AS toplam_ciro,
+             satin_aldigi_urun_sayisi
+      ORDER BY c.toplam_ciro DESC
+      LIMIT 30
+
+system_prompt: |
+  MND üretim ERP verilerini analiz eden bir sanayi zekâsı asistanısın. Neo4j bilgi grafiğinde
+  iş emirleri, ürünler, reçeteler, operasyon adımları, makineler, istasyonlar, tedarikçi firmalar,
+  müşteriler, fire kayıtları, bakım ticketları, ülke düğümleri ve dış olay senaryoları bulunuyor.
+  Veriler 2024, 2025 ve 2026 yıllarını kapsıyor (db_yil property'si ile etiketlenmiş).
+
+  ÖNEMLİ: Cevap vermeden önce MUTLAKA araçları kullanarak veriden sorgula. Tahmin yapma.
+  Yıllar arası karşılaştırma için db_yil filtresi kullanabilirsin.
+  Fire outlier analizinde 3-sigma ilkesini uygula.
+
+  Yanıtlarını Türkçe ver.
+
+visualization:
+  node_colors:
+    IsEmri: "#d97706"
+    Urun: "#0ea5e9"
+    Makine: "#475569"
+    Istasyon: "#0891b2"
+    Recete: "#059669"
+    Operasyon: "#6366f1"
+    Tedarikci: "#7c3aed"
+    Musteri: "#db2777"
+    Fire: "#ef4444"
+    BakimTicketi: "#f59e0b"
+    Ulke: "#14b8a6"
+    DisOlay: "#f43f5e"
+  node_sizes:
+    IsEmri: 25
+    Urun: 20
+    Makine: 30
+    Istasyon: 35
+    Recete: 20
+    Operasyon: 18
+    Tedarikci: 25
+    Musteri: 30
+    Fire: 15
+    BakimTicketi: 20
+    Ulke: 25
+    DisOlay: 28
+  default_cypher: |
+    MATCH (f:Fire)-[r:MAKINEDE]->(m:Makine)-[r2:ISTASYONDA]->(ist:Istasyon)
+    RETURN f, r, m, r2, ist LIMIT 80
